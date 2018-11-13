@@ -536,11 +536,21 @@ header {
 .main-bar-nav {
   float: right; }
   .main-bar-nav .purchase-navbar {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    float: right; }
     .main-bar-nav .purchase-navbar .purchase-navbar-item {
       float: right;
       color: #fff;
-      padding: 1.0625rem;
-      text-align: center; }
+      padding: 0 1.0625rem;
+      margin: 0.875rem 0;
+      text-align: center;
+      border-left: 1px solid #595959; }
+      .main-bar-nav .purchase-navbar .purchase-navbar-item i {
+        color: #ff3448;
+        font-size: 1.5625rem; }
+
+.main-bar-phone-timing {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

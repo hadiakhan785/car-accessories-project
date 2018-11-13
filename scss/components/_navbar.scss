@@ -2,6 +2,7 @@
 	// -Navbar start
 //===========================================
 
+//Top bar
 .top-bar{
 	border-bottom: 1px solid $border-color;
 	.top-bar-nav{
@@ -40,6 +41,8 @@
 	}
 }
 
+
+//Main bar
 .main-bar-brand{
 	float: left;
 	.brand-link{
@@ -70,14 +73,28 @@
 
 	.purchase-navbar{
 		list-style-type: none;
+		margin: 0;
+		float: right;
+
 
 		.purchase-navbar-item{
 			float: right;
 			color: $white;
-			padding: rem(17);
+			padding: 0 rem(17);
+			margin: rem(14) 0;
 			text-align: center;
+			border-left: 1px solid $border-color;
+
+			i {
+				color: $supporting-1;
+				font-size: rem(25);
+			}
 		}
 	}
+}
+
+.main-bar-phone-timing{
+	float: left;
 }
 
 //===========================================
