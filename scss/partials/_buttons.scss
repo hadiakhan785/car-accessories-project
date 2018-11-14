@@ -11,6 +11,14 @@
     cursor: not-allowed;
   }
 }
+
+.offer-buy-btn {
+  background-color: $supporting-4;
+  border: none;
+  padding: rem(10) rem(40);
+  border-radius: rem(20);
+  font-size: rem(20);
+}
 //===========================================
     // -Buttons end
 //===========================================

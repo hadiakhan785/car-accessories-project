@@ -4,7 +4,7 @@
 
 //Top bar
 .top-bar{
-	border-bottom: 1px solid $border-color;
+	
 	.top-bar-nav{
 		float: right;
 	}
@@ -15,16 +15,13 @@
 	ul{
 		list-style-type: none;
 		margin: 0;
+		padding-left: 0;
 		li{
 			float: left;
 			color: $supporting-1;
-			padding: rem(14) rem(25);
+			padding: rem(14) rem(20);
 			font-size: rem(14);
-			font-weight: 600;
-
-			i{
-				margin-right: rem(3);
-			}
+			font-weight: 400;
 		}
 	}
 }
@@ -32,70 +29,111 @@
 .top-bar-search{
 	float: right;
 	padding-left: rem(14);
-	margin: rem(14);
+	margin: rem(12);
+	margin-left: 0;
 	border-left: 1px solid $border-color;
 	i {
-		color: $white;
-		font-size: rem(25);
+		color: $default-font-color;
+		font-size: rem(20);
 
 	}
 }
 
 
 //Main bar
+
+.main-bar{
+	margin: 0 rem(200);
+}
+
 .main-bar-brand{
 	float: left;
+	margin-top: rem(14);
 	.brand-link{
-		color: $white;
-		text-decoration: none;
-
-		.brand-name{
-			font-size: rem(45);
-			margin: 0;
-			font-weight: 900;
-
-			span{
-				color: $supporting-1;
-			}
-		}
-
-		.brand-slogan{
-			margin: 0;
-			letter-spacing: rem(4);
-			font-size: rem(15);
-			font-weight: 300;
-		}
+		display: inline-block;
 	}
 }
 
 .main-bar-nav{
 	float: right;
-
 	.purchase-navbar{
 		list-style-type: none;
 		margin: 0;
 		float: right;
-
+		padding-left: 0;
 
 		.purchase-navbar-item{
 			float: right;
-			color: $white;
+			color: $default-font-color;
 			padding: 0 rem(17);
 			margin: rem(14) 0;
 			text-align: center;
 			border-left: 1px solid $border-color;
+			line-height: 1.9;
 
 			i {
 				color: $supporting-1;
 				font-size: rem(25);
 			}
 		}
+
+		.purchase-navbar-item:nth-child(1){
+			padding-right: 0;
+		}
 	}
 }
 
-.main-bar-phone-timing{
-	float: left;
+.main-bar-purchase-opt{
+	float: right;
+	margin-left: rem(50);
 }
+
+.main-bar-phone-timing{
+	float: right;
+	color: $default-font-color;
+	margin: rem(14) 0;
+
+	.main-phone-timings{
+		line-height: 1.7;
+		font-size: rem(20);
+		margin: 0;
+
+		
+		i{
+			color: $supporting-1;
+			font-size: rem(20);
+			margin-right: rem(10);
+		}
+	
+		span {
+			font-size: rem(14);
+			color: #a2a2a2;
+		}
+	}
+
+	
+}
+
+
+// Sub bar navigation
+.sub-bar-navigation{
+	background-color: $sub-bar-bg;
+	padding: 0 rem(200);
+
+	.sub-navbar{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.sub-navbar-item {
+			color: $default-font-color;
+			float: left;
+			padding: rem(20);
+
+		}
+	}
+}
+
 
 //===========================================
 	// -Navbar end

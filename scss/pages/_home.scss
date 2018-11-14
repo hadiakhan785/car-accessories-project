@@ -2,6 +2,286 @@
 	// -Home Page start
 //===========================================
 
+// Product Showcase
+
+%showcase-item-main-div {
+	height: rem(408);
+	width: 50%;
+	position: relative;
+	float: left;
+}
+
+%showcase-item-detail {
+	color: $default-font-color;
+	padding-top: rem(140);
+	width: rem(350); 
+	padding-left: rem(40);
+}
+
+%showcase-item-detail-title {
+	font-size: rem(35);
+	letter-spacing: rem(2);
+	margin: 0;
+}
+
+%showcase-item-description {
+	color: $supporting-fonts-1;
+	font-size: rem(20);
+}
+
+// showcase item 1
+.showcase-item-1{
+	@extend %showcase-item-main-div;
+	background-color: $supporting-2;
+	
+
+	.showcase-item-detail{
+		@extend %showcase-item-detail;
+
+		.showcase-item-title {
+			@extend %showcase-item-detail-title;
+		}
+
+		.showcase-item-description {
+			@extend %showcase-item-description;
+		}
+	}
+
+	.showcase-item-1-pic{
+		position: absolute;
+		right: 0;
+		top: rem(100);
+		
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// showcase item-2
+.showcase-item-2 {
+	@extend %showcase-item-main-div;	
+	background-color: $supporting-3 ;
+	
+	.showcase-item-detail {
+		@extend %showcase-item-detail;
+		
+		.showcase-item-title {
+			@extend %showcase-item-detail-title;			
+		}
+
+		.showcase-item-description {
+			@extend %showcase-item-description;			
+		}
+	}
+
+	.showcase-item-2-pic{
+		position: absolute;
+		bottom: 0;
+		right: rem(25);
+		
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// showcase item 3
+.showcase-item-3 {
+	@extend %showcase-item-main-div;	
+	background-color: $supporting-3 ;
+	
+	.showcase-item-detail {
+		@extend %showcase-item-detail;
+		
+		.showcase-item-title {
+			@extend %showcase-item-detail-title;			
+		}
+
+		.showcase-item-description {
+			@extend %showcase-item-description;			
+		}
+	}
+
+	.showcase-item-3a-pic{
+		position: absolute;
+		bottom: rem(40);
+		right: rem(50);
+		
+		img{
+			width: 100%;
+		}
+	}
+
+	.showcase-item-3b-pic{
+		position: absolute;
+		bottom: rem(60);
+		right: rem(200);
+		
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+//showcase item 4
+.showcase-item-4 {
+	@extend %showcase-item-main-div;	
+	background-color: $supporting-2 ;
+	
+	.showcase-item-detail {
+		@extend %showcase-item-detail;
+		
+		.showcase-item-title {
+			@extend %showcase-item-detail-title;			
+		}
+
+		.showcase-item-description {
+			@extend %showcase-item-description;			
+		}
+	}
+
+	.showcase-item-4-pic{
+		position: absolute;
+		bottom: 0;
+		right: rem(60);
+		
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// featured products 
+.featured-products {
+	background-color: #282828;
+	padding-bottom: rem(120);
+
+	.featured-products-title {
+		color: $default-font-color;
+		font-size: rem(35);
+		margin: 0;
+		padding-bottom: rem(15);
+		padding-top: rem(85);
+	}
+
+	.hr-div{
+		@include hr-div(rem(5), rem(176));
+		margin: 0 auto;
+		margin-bottom: rem(60);
+	}
+}
+
+// featured product item 1
+.featured-product-item {
+	width: rem(250);
+	max-width: rem(250);
+	min-width: rem(200);
+	height: rem(400);
+	background-color: $featured-item-bg;
+	float: left;
+	margin: rem(10);
+
+	.featured-item-title{
+		color: $supporting-1;
+		font-size: rem(17);
+		margin: 0;
+		margin-bottom: rem(20);
+		font-weight: 900;
+	}
+
+	.featured-item-price {
+		color: $default-font-color;
+		font-size: rem(25);
+		margin: 0;
+		margin-bottom: rem(15);
+	}
+
+	.featured-item-rating{
+		color: $supporting-1;
+		margin: 0;
+		font-size: rem(17);
+	}
+}
+
+.featured-product-1-img {
+	padding-top: rem(90);
+	padding-left: rem(30);
+	width: rem(200);
+}
+
+.featured-product-2-img {
+	padding-top: rem(30);
+	padding-bottom: rem(35);
+	padding-left: rem(20);
+	width: rem(200);
+}
+
+.featured-product-3-img {
+	padding-top: rem(26);
+	padding-left: rem(41);
+	padding-bottom: rem(10);
+	width: rem(200);
+}
+
+.featured-product-4-img {
+	padding-top: rem(70);
+	padding-bottom: rem(60);
+	padding-left: rem(20);
+	width: rem(200);
+}
+
+.featured-product-5-img {
+	padding-top: rem(20);
+	padding-left: rem(30);
+	padding-bottom: rem(20);
+	width: rem(200);
+}
+
+// deal offer section
+
+.deal-offer-section {
+	height: rem(521);
+	background-image: url('../images/offer-bg.jpeg');
+	background-position: bottom;
+	background-size: cover;
+
+	.deal-offer-bg-layer{
+		background-color: rgba(0,0,0,0.7);
+		height: rem(521);
+	}
+}
+
+.offer{
+	color: $default-font-color;
+	padding-top: rem(170);
+
+	.offer-title {
+		margin: 0;
+		font-size: rem(82);
+	}
+
+	.offer-description {
+		font-size: rem(40);
+		margin: rem(10) 0;
+	}
+
+	.offer-validity{
+		font-size: rem(15);
+	}
+
+
+}
+
+.offer-1 {
+	float: left;
+}
+
+.offer-2{
+	float: right;
+}
+
 //===========================================
 	// -Home Page end
 //===========================================

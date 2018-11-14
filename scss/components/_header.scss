@@ -4,8 +4,16 @@
 
 header{
 	background-color: #212121;
-	padding: 0 rem(200);
+
+	.haeder-banner{
+		background-image: url('../images/header-pic.jpeg');
+		height: rem(674);
+		width: 100%;
+		background-position: bottom;
+		background-size: cover;
+	}
 }
+
 
 //===========================================
 	// -Header end

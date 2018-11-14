@@ -27,6 +27,19 @@ html, body {
   }
 }
 
+.container {
+  width: 100%;
+  max-width: rem(1200);
+  margin: 0 auto;
+}
+
+.featured-product-container{
+  width: 100%;
+  max-width: rem(1400);
+  margin: 0 auto;
+}
+
+
 
 //=======================================================
 	// -Global style  end

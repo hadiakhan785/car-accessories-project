@@ -15,82 +15,291 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
+    <div class="main-container">
+
+        <header class="main-header">
             <!-- top bar -->
-            <div class="top-bar clearfix">
-                <div class="top-bar-nav">
-                    <nav class="top-navbar clearfix">
-                        <ul class="clearfix">
-                            <li class="top-navbar-item">
-                                <a href="#"></a><i class="icon-csuser"></i> My Account</a>
-                            </li>
+            <div class="top-bar">
+                <div class="container clearfix border-bottom">
+                    <div class="top-bar-nav clearfix">
+                        <nav class="top-navbar">
+                            <ul class="clearfix">
+                                <li class="top-navbar-item">
+                                    <a href="#"></a><i class="icon-csuser"></i> My Account</a>
+                                </li>
 
-                            <li class="top-navbar-item">
-                                <a herf="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
-                            </li>
+                                <li class="top-navbar-item">
+                                    <a herf="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
+                                </li>
 
-                            <li class="top-navbar-item">
-                                <a herf="#"><i class="icon-cschecked"></i> Checkout</a>
-                            </li>
-                        </ul>
-                    </nav>
+                                <li class="top-navbar-item">
+                                    <a herf="#"><i class="icon-cschecked"></i> Checkout</a>
+                                </li>
+                            </ul>
+                        </nav>
 
-                    <!-- Search buttn -->
-                    <div class="top-bar-search btn">
-                        <i class="icon-csmusica-searcher"></i>
+                        <!-- Search buttn -->
+                        <div class="top-bar-search btn">
+                            <i class="icon-csmusica-searcher"></i>
+                        </div>
+
                     </div>
-
                 </div>
             </div>
 
             <!-- main-bar -->
-            <div class="main-bar clearfix">
-
-                <!-- brand -->
-                <div class="main-bar-brand">
-                    <a href="#" class="brand-link">
-                        <h1 class="brand-name">Car<span>Store</span></h1>
-                        <h4 class="brand-slogan">BEST CAR SELLER</h4>
-                    </a>
-                </div>
-
-                <!-- main-bar-navbar -->
-                <div class="main-bar-nav clearfix">
-                    <!-- purchasing options -->
-                    <div class="main-bar-purchase-opt clearfix">
-                        <ul class="purchase-navbar clearfix">
-                            <li class="purchase-navbar-item">
-                                <i class="icon-csshopping-cart-black-shape"></i><br><br>
-                                MY CART
-                            </li>
-
-                            <li class="purchase-navbar-item">
-                                <i class="icon-cssports-car"></i><br><br>
-                                COMPARE
-                            </li>
-
-                            <li class="purchase-navbar-item">
-                                <i class="icon-csstar"></i><br><br>
-                                WISHLIST
-                            </li>
-                        </ul>
+            <div class="main-bar">
+                <div class="container clearfix">
+                    <!-- brand -->
+                    <div class="main-bar-brand">
+                        <a href="#" class="brand-link">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
                     </div>
 
-                    <!-- phone and timings -->
-                    <div class="main-bar-phone-timing">
-                        <p>
-                            <i class="icon-cssmartphone"></i>  +123 456 7890
-                            <br>
-                            <br>
-                            MON-FRI: 8:30AM-7:30PM; SAT-SUN: 9:30AM-4:30PM
-                        </p>
-                    </div>
+                    <!-- main-bar-navbar -->
+                    <div class="main-bar-nav clearfix">
+                        <!-- purchasing options -->
+                        <div class="main-bar-purchase-opt clearfix">
+                            <ul class="purchase-navbar clearfix">
+                                <li class="purchase-navbar-item">
+                                    <i class="icon-csshopping-cart-black-shape"></i><br>
+                                    MY CART
+                                </li>
 
+                                <li class="purchase-navbar-item">
+                                    <i class="icon-cssports-car"></i><br>
+                                    COMPARE
+                                </li>
+
+                                <li class="purchase-navbar-item">
+                                    <i class="icon-csstar"></i><br>
+                                    WISHLIST
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- phone and timings -->
+                        <div class="main-bar-phone-timing text-right">
+                            <p class="main-phone-timings">
+                                <i class="icon-cssmartphone"></i> +123 456 7890
+                                <br>
+                                <span>MON-FRI: 8:30AM-7:30PM; SAT-SUN: 9:30AM-4:30PM</span>
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
+
+            <!-- sub bar navigation bar -->
+            <nav class="sub-bar-navigation">
+                <div class="container">
+                    <ul class="sub-navbar clearfix">
+                        <li class="sub-navbar-item">HOME</li>
+                        <li class="sub-navbar-item">SERVICES</li>
+                        <li class="sub-navbar-item">ABOUT</li>
+                        <li class="sub-navbar-item">REVIEWS</li>
+                        <li class="sub-navbar-item">LOCATIONS</li>
+                        <li class="sub-navbar-item">CONTACTS</li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <!-- header banner image -->
+            <canvas class="haeder-banner"></canvas>
         </header>
+
+        <!-- further body content -->
+        <article class="article-content">
+
+            <!-- product showcase section -->
+            <div class="product-showcase clearfix">
+
+                <!-- item-1 -->
+                <div class="showcase-item-1">
+                    <div class="showcase-item-detail">
+                        <h2 class="showcase-item-title">HEADLIGHTS</h2>
+                        <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
+                    </div>
+
+                    <div class="showcase-item-1-pic">
+                        <img src="images/product-1.png" alt="product image">
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+                <div class="showcase-item-2">
+                    <div class="showcase-item-detail">
+                        <h2 class="showcase-item-title">HEADLIGHTS</h2>
+                        <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
+                    </div>
+
+                    <div class="showcase-item-2-pic">
+                        <img src="images/product-2.png" alt="product image">
+                    </div>
+                </div>
+
+                <!-- item-3 -->
+                <div class="showcase-item-3">
+                    <div class="showcase-item-detail">
+                        <h2 class="showcase-item-title">HEADLIGHTS</h2>
+                        <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
+                    </div>
+
+                    <div class="showcase-item-3b-pic">
+                        <img src="images/product-3b.png" alt="product image">
+                    </div>
+
+                    <div class="showcase-item-3a-pic">
+                        <img src="images/product-3a.png" alt="product image">
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+                <div class="showcase-item-4">
+                    <div class="showcase-item-detail">
+                        <h2 class="showcase-item-title">HEADLIGHTS</h2>
+                        <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
+                    </div>
+
+                    <div class="showcase-item-4-pic">
+                        <img src="images/product-4.png" alt="product image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- featured products -->
+            <div class="featured-products">
+                <div class="featured-product-container clearfix">
+                    <h2 class="featured-products-title text-center">FEATURED PRODUCTS</h2>
+                    <div class="hr-div">
+
+                    </div>
+
+                    <!-- featured product 1 -->
+                    <div class="featured-product-item text-center">
+                        <div class="featured-product-1-img">
+                            <img src="images/accessory-1.png" alt="featured product 1">
+                        </div>
+                        <div class="featued-product-detail">
+                            <h4 class="featured-item-title">HEADLIGHTS</h4>
+                            <h3 class="featured-item-price">$ 300.00</h3>
+                            <p class="featured-item-rating">
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar-half-empty"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- featured product 2 -->
+                    <div class="featured-product-item text-center">
+                        <div class="featured-product-2-img">
+                            <img src="images/accessory-2.png" alt="featured product 1">
+                        </div>
+                        <div class="featued-product-detail">
+                            <h4 class="featured-item-title">HEADLIGHTS</h4>
+                            <h3 class="featured-item-price">$ 300.00</h3>
+                            <p class="featured-item-rating">
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar-half-empty"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- featured product 3 -->
+                    <div class="featured-product-item text-center">
+                        <div class="featured-product-3-img">
+                            <img src="images/accessory-3.png" alt="featured product 1">
+                        </div>
+                        <div class="featued-product-detail">
+                            <h4 class="featured-item-title">HEADLIGHTS</h4>
+                            <h3 class="featured-item-price">$ 300.00</h3>
+                            <p class="featured-item-rating">
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar-half-empty"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- featured product 4 -->
+                    <div class="featured-product-item text-center">
+                        <div class="featured-product-4-img">
+                            <img src="images/accessory-4.png" alt="featured product 1">
+                        </div>
+                        <div class="featued-product-detail">
+                            <h4 class="featured-item-title">HEADLIGHTS</h4>
+                            <h3 class="featured-item-price">$ 300.00</h3>
+                            <p class="featured-item-rating">
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar-half-empty"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- featured product 5 -->
+                    <div class="featured-product-item text-center">
+                        <div class="featured-product-5-img">
+                            <img src="images/accessory-5.png" alt="featured product 1">
+                        </div>
+                        <div class="featued-product-detail">
+                            <h4 class="featured-item-title">HEADLIGHTS</h4>
+                            <h3 class="featured-item-price">$ 300.00</h3>
+                            <p class="featured-item-rating">
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar"></i>
+                                <i class="icon-csstar-half-empty"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- deals offer section -->
+            <div class="deal-offer-section">
+                <div class="deal-offer-bg-layer">
+                    <div class="container clearfix">
+
+                        <!-- offer 1 -->
+                        <div class="offer offer-1 text-center">
+                            <h1 class="offer-title">25% OFF</h1>
+                            <h3 class="offer-description">ON ORDER OVER $999</h3>
+                            <p class="offer-validity">This offer valid on all our items</p>
+                            <button class="btn offer-buy-btn">BUY NOW</button>
+                        </div>
+
+                        <!-- offer 2 -->
+                        <div class="offer offer-2 text-center">
+                            <h1 class="offer-title">25% OFF</h1>
+                            <h3 class="offer-description">ON ORDER OVER $999</h3>
+                            <p class="offer-validity">This offer valid on all our items</p>
+                            <button class="btn offer-buy-btn">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <footer class="main-footer">
+            div.top-footer
+        </footer>
     </div>
 </body>
 

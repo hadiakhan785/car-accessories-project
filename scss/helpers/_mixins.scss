@@ -7,6 +7,12 @@
   @return ($pixels / $context) * 1rem;
 }
 
+@mixin hr-div($height, $width){
+	height: $height;
+	width: $width;
+	background-color: $supporting-4;
+}
+
 // Media Query
 @mixin mq($breakpoint, $type: min) {
 	// Checking $breakpoint value in $grid-breakpoints object value

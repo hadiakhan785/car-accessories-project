@@ -378,6 +378,12 @@ th {
   height: 0;
   clear: both; }
 
+.text-right {
+  text-align: right; }
+
+.border-bottom {
+  border-bottom: 1px solid #595959; }
+
 .btn {
   font-weight: bold;
   text-align: center;
@@ -385,6 +391,13 @@ th {
   border-radius: 5px; }
   .btn[disabled], .btn.disabled {
     cursor: not-allowed; }
+
+.offer-buy-btn {
+  background-color: #9c1c28;
+  border: none;
+  padding: 0.625rem 2.5rem;
+  border-radius: 1.25rem;
+  font-size: 1.25rem; }
 
 * {
   box-sizing: border-box; }
@@ -404,6 +417,16 @@ html, body {
   @media (min-width: 1200px) {
     html, body {
       font-size: 16px; } }
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto; }
+
+.featured-product-container {
+  width: 100%;
+  max-width: 87.5rem;
+  margin: 0 auto; }
 
 @font-face {
   font-family: 'car-shop';
@@ -485,72 +508,262 @@ html, body {
   content: "\e913"; }
 
 header {
-  background-color: #212121;
-  padding: 0 12.5rem; }
+  background-color: #212121; }
+  header .haeder-banner {
+    background-image: url("../images/header-pic.jpeg");
+    height: 42.125rem;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover; }
 
-.top-bar {
-  border-bottom: 1px solid #595959; }
-  .top-bar .top-bar-nav {
-    float: right; }
+footer {
+  background-color: #000000; }
+
+.top-bar .top-bar-nav {
+  float: right; }
 
 .top-navbar {
   float: left; }
   .top-navbar ul {
     list-style-type: none;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0; }
     .top-navbar ul li {
       float: left;
       color: #ff3448;
-      padding: 0.875rem 1.5625rem;
+      padding: 0.875rem 1.25rem;
       font-size: 0.875rem;
-      font-weight: 600; }
-      .top-navbar ul li i {
-        margin-right: 0.1875rem; }
+      font-weight: 400; }
 
 .top-bar-search {
   float: right;
   padding-left: 0.875rem;
-  margin: 0.875rem;
+  margin: 0.75rem;
+  margin-left: 0;
   border-left: 1px solid #595959; }
   .top-bar-search i {
     color: #fff;
-    font-size: 1.5625rem; }
+    font-size: 1.25rem; }
+
+.main-bar {
+  margin: 0 12.5rem; }
 
 .main-bar-brand {
-  float: left; }
+  float: left;
+  margin-top: 0.875rem; }
   .main-bar-brand .brand-link {
-    color: #fff;
-    text-decoration: none; }
-    .main-bar-brand .brand-link .brand-name {
-      font-size: 2.8125rem;
-      margin: 0;
-      font-weight: 900; }
-      .main-bar-brand .brand-link .brand-name span {
-        color: #ff3448; }
-    .main-bar-brand .brand-link .brand-slogan {
-      margin: 0;
-      letter-spacing: 0.25rem;
-      font-size: 0.9375rem;
-      font-weight: 300; }
+    display: inline-block; }
 
 .main-bar-nav {
   float: right; }
   .main-bar-nav .purchase-navbar {
     list-style-type: none;
     margin: 0;
-    float: right; }
+    float: right;
+    padding-left: 0; }
     .main-bar-nav .purchase-navbar .purchase-navbar-item {
       float: right;
       color: #fff;
       padding: 0 1.0625rem;
       margin: 0.875rem 0;
       text-align: center;
-      border-left: 1px solid #595959; }
+      border-left: 1px solid #595959;
+      line-height: 1.9; }
       .main-bar-nav .purchase-navbar .purchase-navbar-item i {
         color: #ff3448;
         font-size: 1.5625rem; }
+    .main-bar-nav .purchase-navbar .purchase-navbar-item:nth-child(1) {
+      padding-right: 0; }
+
+.main-bar-purchase-opt {
+  float: right;
+  margin-left: 3.125rem; }
 
 .main-bar-phone-timing {
+  float: right;
+  color: #fff;
+  margin: 0.875rem 0; }
+  .main-bar-phone-timing .main-phone-timings {
+    line-height: 1.7;
+    font-size: 1.25rem;
+    margin: 0; }
+    .main-bar-phone-timing .main-phone-timings i {
+      color: #ff3448;
+      font-size: 1.25rem;
+      margin-right: 0.625rem; }
+    .main-bar-phone-timing .main-phone-timings span {
+      font-size: 0.875rem;
+      color: #a2a2a2; }
+
+.sub-bar-navigation {
+  background-color: #030303;
+  padding: 0 12.5rem; }
+  .sub-bar-navigation .sub-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .sub-bar-navigation .sub-navbar .sub-navbar-item {
+      color: #fff;
+      float: left;
+      padding: 1.25rem; }
+
+.showcase-item-1, .showcase-item-2, .showcase-item-3, .showcase-item-4 {
+  height: 25.5rem;
+  width: 50%;
+  position: relative;
   float: left; }
+
+.showcase-item-1 .showcase-item-detail, .showcase-item-2 .showcase-item-detail, .showcase-item-3 .showcase-item-detail, .showcase-item-4 .showcase-item-detail {
+  color: #fff;
+  padding-top: 8.75rem;
+  width: 21.875rem;
+  padding-left: 2.5rem; }
+
+.showcase-item-1 .showcase-item-detail .showcase-item-title, .showcase-item-2 .showcase-item-detail .showcase-item-title, .showcase-item-3 .showcase-item-detail .showcase-item-title, .showcase-item-4 .showcase-item-detail .showcase-item-title {
+  font-size: 2.1875rem;
+  letter-spacing: 0.125rem;
+  margin: 0; }
+
+.showcase-item-1 .showcase-item-detail .showcase-item-description, .showcase-item-2 .showcase-item-detail .showcase-item-description, .showcase-item-3 .showcase-item-detail .showcase-item-description, .showcase-item-4 .showcase-item-detail .showcase-item-description {
+  color: #979696;
+  font-size: 1.25rem; }
+
+.showcase-item-1 {
+  background-color: #303030; }
+  .showcase-item-1 .showcase-item-1-pic {
+    position: absolute;
+    right: 0;
+    top: 6.25rem; }
+    .showcase-item-1 .showcase-item-1-pic img {
+      width: 100%; }
+
+.showcase-item-2 {
+  background-color: #1c1c1c; }
+  .showcase-item-2 .showcase-item-2-pic {
+    position: absolute;
+    bottom: 0;
+    right: 1.5625rem; }
+    .showcase-item-2 .showcase-item-2-pic img {
+      width: 100%; }
+
+.showcase-item-3 {
+  background-color: #1c1c1c; }
+  .showcase-item-3 .showcase-item-3a-pic {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 3.125rem; }
+    .showcase-item-3 .showcase-item-3a-pic img {
+      width: 100%; }
+  .showcase-item-3 .showcase-item-3b-pic {
+    position: absolute;
+    bottom: 3.75rem;
+    right: 12.5rem; }
+    .showcase-item-3 .showcase-item-3b-pic img {
+      width: 100%; }
+
+.showcase-item-4 {
+  background-color: #303030; }
+  .showcase-item-4 .showcase-item-4-pic {
+    position: absolute;
+    bottom: 0;
+    right: 3.75rem; }
+    .showcase-item-4 .showcase-item-4-pic img {
+      width: 100%; }
+
+.featured-products {
+  background-color: #282828;
+  padding-bottom: 7.5rem; }
+  .featured-products .featured-products-title {
+    color: #fff;
+    font-size: 2.1875rem;
+    margin: 0;
+    padding-bottom: 0.9375rem;
+    padding-top: 5.3125rem; }
+  .featured-products .hr-div {
+    height: 0.3125rem;
+    width: 11rem;
+    background-color: #9c1c28;
+    margin: 0 auto;
+    margin-bottom: 3.75rem; }
+
+.featured-product-item {
+  width: 15.625rem;
+  max-width: 15.625rem;
+  min-width: 12.5rem;
+  height: 25rem;
+  background-color: #363636;
+  float: left;
+  margin: 0.625rem; }
+  .featured-product-item .featured-item-title {
+    color: #ff3448;
+    font-size: 1.0625rem;
+    margin: 0;
+    margin-bottom: 1.25rem;
+    font-weight: 900; }
+  .featured-product-item .featured-item-price {
+    color: #fff;
+    font-size: 1.5625rem;
+    margin: 0;
+    margin-bottom: 0.9375rem; }
+  .featured-product-item .featured-item-rating {
+    color: #ff3448;
+    margin: 0;
+    font-size: 1.0625rem; }
+
+.featured-product-1-img {
+  padding-top: 5.625rem;
+  padding-left: 1.875rem;
+  width: 12.5rem; }
+
+.featured-product-2-img {
+  padding-top: 1.875rem;
+  padding-bottom: 2.1875rem;
+  padding-left: 1.25rem;
+  width: 12.5rem; }
+
+.featured-product-3-img {
+  padding-top: 1.625rem;
+  padding-left: 2.5625rem;
+  padding-bottom: 0.625rem;
+  width: 12.5rem; }
+
+.featured-product-4-img {
+  padding-top: 4.375rem;
+  padding-bottom: 3.75rem;
+  padding-left: 1.25rem;
+  width: 12.5rem; }
+
+.featured-product-5-img {
+  padding-top: 1.25rem;
+  padding-left: 1.875rem;
+  padding-bottom: 1.25rem;
+  width: 12.5rem; }
+
+.deal-offer-section {
+  height: 32.5625rem;
+  background-image: url("../images/offer-bg.jpeg");
+  background-position: bottom;
+  background-size: cover; }
+  .deal-offer-section .deal-offer-bg-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 32.5625rem; }
+
+.offer {
+  color: #fff;
+  padding-top: 10.625rem; }
+  .offer .offer-title {
+    margin: 0;
+    font-size: 5.125rem; }
+  .offer .offer-description {
+    font-size: 2.5rem;
+    margin: 0.625rem 0; }
+  .offer .offer-validity {
+    font-size: 0.9375rem; }
+
+.offer-1 {
+  float: left; }
+
+.offer-2 {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
