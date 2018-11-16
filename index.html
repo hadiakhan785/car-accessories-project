@@ -25,15 +25,15 @@
                         <nav class="top-navbar">
                             <ul class="clearfix">
                                 <li class="top-navbar-item">
-                                    <a href="#"></a><i class="icon-csuser"></i> My Account</a>
+                                    <a href="#"><i class="icon-csuser"></i> My Account</a>
                                 </li>
 
                                 <li class="top-navbar-item">
-                                    <a herf="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
+                                    <a href="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
                                 </li>
 
                                 <li class="top-navbar-item">
-                                    <a herf="#"><i class="icon-cschecked"></i> Checkout</a>
+                                    <a href="#"><i class="icon-cschecked"></i> Checkout</a>
                                 </li>
                             </ul>
                         </nav>
@@ -59,25 +59,6 @@
 
                     <!-- main-bar-navbar -->
                     <div class="main-bar-nav clearfix">
-                        <!-- purchasing options -->
-                        <div class="main-bar-purchase-opt clearfix">
-                            <ul class="purchase-navbar clearfix">
-                                <li class="purchase-navbar-item">
-                                    <i class="icon-csshopping-cart-black-shape"></i><br>
-                                    MY CART
-                                </li>
-
-                                <li class="purchase-navbar-item">
-                                    <i class="icon-cssports-car"></i><br>
-                                    COMPARE
-                                </li>
-
-                                <li class="purchase-navbar-item">
-                                    <i class="icon-csstar"></i><br>
-                                    WISHLIST
-                                </li>
-                            </ul>
-                        </div>
 
                         <!-- phone and timings -->
                         <div class="main-bar-phone-timing text-right">
@@ -88,6 +69,35 @@
                             </p>
                         </div>
 
+                        <!-- purchasing options -->
+                        <div class="main-bar-purchase-opt clearfix">
+                            <ul class="purchase-navbar clearfix">
+
+                                <li class="purchase-navbar-item">
+                                    <a href="#" class="purchase-navbar-item-link">
+                                        <i class="icon-csshopping-cart-black-shape"></i><br>
+                                        MY CART
+                                    </a>
+                                </li>
+
+                                <li class="purchase-navbar-item">
+                                    <a href="#" class="purchase-navbar-item-link">
+                                        <i class="icon-cssports-car"></i><br>
+                                        COMPARE
+                                    </a>
+                                </li>
+
+                                <li class="purchase-navbar-item">
+                                    <a href="#" class="purchase-navbar-item-link">
+                                        <i class="icon-csstar"></i><br>
+                                        WISHLIST
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
                     </div>
                 </div>
 
@@ -97,19 +107,36 @@
             <nav class="sub-bar-navigation">
                 <div class="container">
                     <ul class="sub-navbar clearfix">
-                        <li class="sub-navbar-item">HOME</li>
-                        <li class="sub-navbar-item">SERVICES</li>
-                        <li class="sub-navbar-item">ABOUT</li>
-                        <li class="sub-navbar-item">REVIEWS</li>
-                        <li class="sub-navbar-item">LOCATIONS</li>
-                        <li class="sub-navbar-item">CONTACTS</li>
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">HOME</a>
+                        </li>
+
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">SERVICES</a>
+                        </li>
+
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">ABOUT</a>
+                        </li>
+
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">REVIEWS</a>
+                        </li>
+
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">LOCATIONS</a>
+                        </li>
+
+                        <li class="sub-navbar-item">
+                            <a href="#" class="sub-navbar-item-link">CONTACTS</a>
+                        </li>
                     </ul>
                 </div>
 
             </nav>
 
             <!-- header banner image -->
-            <canvas class="haeder-banner"></canvas>
+            <div class="haeder-banner"></div>
         </header>
 
         <!-- further body content -->
@@ -119,7 +146,7 @@
             <div class="product-showcase clearfix">
 
                 <!-- item-1 -->
-                <div class="showcase-item-1">
+                <div class="showcase-item">
                     <div class="showcase-item-detail">
                         <h2 class="showcase-item-title">HEADLIGHTS</h2>
                         <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
@@ -131,7 +158,7 @@
                 </div>
 
                 <!-- item-2 -->
-                <div class="showcase-item-2">
+                <div class="showcase-item">
                     <div class="showcase-item-detail">
                         <h2 class="showcase-item-title">HEADLIGHTS</h2>
                         <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
@@ -143,7 +170,7 @@
                 </div>
 
                 <!-- item-3 -->
-                <div class="showcase-item-3">
+                <div class="showcase-item">
                     <div class="showcase-item-detail">
                         <h2 class="showcase-item-title">HEADLIGHTS</h2>
                         <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
@@ -159,7 +186,7 @@
                 </div>
 
                 <!-- item-4 -->
-                <div class="showcase-item-4">
+                <div class="showcase-item">
                     <div class="showcase-item-detail">
                         <h2 class="showcase-item-title">HEADLIGHTS</h2>
                         <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
@@ -173,14 +200,15 @@
 
             <!-- featured products -->
             <div class="featured-products">
-                <div class="featured-product-container clearfix">
-                    <h2 class="featured-products-title text-center">FEATURED PRODUCTS</h2>
-                    <div class="hr-div">
+                <div class="fluid-container clearfix">
+                    <div class="title-wrapper">
+                        <h2 class="featured-products-title text-center title">FEATURED PRODUCTS</h2>
 
                     </div>
 
+
                     <!-- featured product 1 -->
-                    <div class="featured-product-item text-center">
+                    <div class="featured-product-item">
                         <div class="featured-product-1-img">
                             <img src="images/accessory-1.png" alt="featured product 1">
                         </div>
@@ -198,7 +226,7 @@
                     </div>
 
                     <!-- featured product 2 -->
-                    <div class="featured-product-item text-center">
+                    <div class="featured-product-item">
                         <div class="featured-product-2-img">
                             <img src="images/accessory-2.png" alt="featured product 1">
                         </div>
@@ -216,7 +244,7 @@
                     </div>
 
                     <!-- featured product 3 -->
-                    <div class="featured-product-item text-center">
+                    <div class="featured-product-item">
                         <div class="featured-product-3-img">
                             <img src="images/accessory-3.png" alt="featured product 1">
                         </div>
@@ -234,7 +262,7 @@
                     </div>
 
                     <!-- featured product 4 -->
-                    <div class="featured-product-item text-center">
+                    <div class="featured-product-item">
                         <div class="featured-product-4-img">
                             <img src="images/accessory-4.png" alt="featured product 1">
                         </div>
@@ -252,7 +280,7 @@
                     </div>
 
                     <!-- featured product 5 -->
-                    <div class="featured-product-item text-center">
+                    <div class="featured-product-item">
                         <div class="featured-product-5-img">
                             <img src="images/accessory-5.png" alt="featured product 1">
                         </div>
@@ -268,6 +296,7 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -277,19 +306,19 @@
                     <div class="container clearfix">
 
                         <!-- offer 1 -->
-                        <div class="offer offer-1 text-center">
+                        <div class="offer offer-1">
                             <h1 class="offer-title">25% OFF</h1>
                             <h3 class="offer-description">ON ORDER OVER $999</h3>
                             <p class="offer-validity">This offer valid on all our items</p>
-                            <button class="btn offer-buy-btn">BUY NOW</button>
+                            <button class="btn global-btn-2">BUY NOW</button>
                         </div>
 
                         <!-- offer 2 -->
-                        <div class="offer offer-2 text-center">
+                        <div class="offer offer-2">
                             <h1 class="offer-title">25% OFF</h1>
                             <h3 class="offer-description">ON ORDER OVER $999</h3>
                             <p class="offer-validity">This offer valid on all our items</p>
-                            <button class="btn offer-buy-btn">BUY NOW</button>
+                            <button class="btn global-btn-2">BUY NOW</button>
                         </div>
                     </div>
                 </div>
@@ -297,8 +326,200 @@
 
         </article>
 
+
+        <!-- footer -->
         <footer class="main-footer">
-            div.top-footer
+
+            <!-- top footer -->
+            <div class="top-footer ">
+                <div class="fluid-container clearfix top-footer-container border-bottom">
+
+                    <!-- links container -->
+                    <div class="quick-links-parent clearfix ">
+
+                        <!-- quick links child 1 -->
+                        <div class="quick-links-child">
+                            <div class="title-wrapper">
+                                <h2 class="title after-center">QUICK LINKS</h2>
+                            </div>
+
+                            <a href="#" class="quick-links-item">About Us</a>
+                            <a href="#" class="quick-links-item">Customer Services</a>
+                            <a href="#" class="quick-links-item">Privacy Policy</a>
+                            <a href="#" class="quick-links-item">Site Map</a>
+                            <a href="#" class="quick-links-item">Search Terms</a>
+                            <a href="#" class="quick-links-item">Advanced Search</a>
+                            <a href="#" class="quick-links-item">Orders and Returns</a>
+                            <a href="#" class="quick-links-item">Contact Us</a>
+                        </div>
+
+                        <!--quick links child 2 -->
+                        <div class="quick-links-child">
+                            <div class="title-wrapper">
+                                <h2 class="title">QUICK LINKS</h2>
+                            </div>
+
+                            <a href="#" class="quick-links-item">About Us</a>
+                            <a href="#" class="quick-links-item">Customer Services</a>
+                            <a href="#" class="quick-links-item">Privacy Policy</a>
+                            <a href="#" class="quick-links-item">Site Map</a>
+                            <a href="#" class="quick-links-item">Search Terms</a>
+                            <a href="#" class="quick-links-item">Advanced Search</a>
+                            <a href="#" class="quick-links-item">Orders and Returns</a>
+                            <a href="#" class="quick-links-item">Contact Us</a>
+                        </div>
+
+                        <!-- quick links child-3 -->
+                        <div class="quick-links-child">
+                            <div class="title-wrapper">
+                                <h2 class="title">QUICK LINKS</h2>
+                            </div>
+
+                            <a href="#" class="quick-links-item">About Us</a>
+                            <a href="#" class="quick-links-item">Customer Services</a>
+                            <a href="#" class="quick-links-item">Privacy Policy</a>
+                            <a href="#" class="quick-links-item">Site Map</a>
+                            <a href="#" class="quick-links-item">Search Terms</a>
+                            <a href="#" class="quick-links-item">Advanced Search</a>
+                            <a href="#" class="quick-links-item">Orders and Returns</a>
+                            <a href="#" class="quick-links-item">Contact Us</a>
+                        </div>
+
+                    </div>
+
+                    <!-- news letter form -->
+                    <div class="top-footer-newsletter-form">
+                        <div class="title-wrapper">
+                            <h2 class="newsletter-form-title title">NEWSLETTER</h2>
+
+                        </div>
+
+                        <p class="newsletter-form-descrip">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum</p>
+
+                        <input type="text" class="newsletter-form-input" />
+
+                        <button class="btn global-btn-2">SUBMIT NOW</button>
+
+                        <!-- follow links -->
+                        <div class="follow-links">
+                            <a href="#" class="follow-link-item">
+                                <i class="icon-csfacebook-logo"></i>
+                            </a>
+
+                            <a href="#" class="follow-link-item">
+                                <i class="icon-cstwitter-logo-silhouette"></i>
+                            </a>
+
+                            <a href="#" class="follow-link-item">
+                                <i class="icon-csgoogle-plus"></i>
+                            </a>
+
+                            <a href="#" class="follow-link-item">
+                                <i class="icon-csinstagram-logo"></i>
+                            </a>
+
+                            <a href="#" class="follow-link-item">
+                                <i class="icon-cspinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- mid footer -->
+            <div class="mid-footer">
+                <div class="fluid-container clearfix mid-footer-container border-bottom">
+
+                    <!-- information item 1 -->
+                    <div class="mid-footer-information">
+                        <div class="title-wrapper">
+                            <h2 class="title">INFORMATION</h2>
+
+                        </div>
+
+                        <p class="information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+
+                    <!-- information item 2 -->
+                    <div class="mid-footer-information">
+                        <div class="title-wrapper">
+                            <h2 class="title">INFORMATION</h2>
+                        </div>
+
+                        <p class="information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+
+                    <!-- contact details -->
+                    <div class="mid-footer-contact-info">
+                        <div class="title-wrapper">
+                            <h2 class="title">CONTACT</h2>
+                        </div>
+
+                        <div class="contact-details">
+                            <p class="address">
+                                <i class="icon-cslocation-pointer"></i>
+                                123 Main Road, Your City, NY 1234
+                            </p>
+
+                            <p class="phone-number">
+                                <i class="icon-csphone-receiver"></i>
+                                +123 456 7890
+                            </p>
+
+                            <p class="timings">
+                                <i class="icon-csclock"></i>
+                                7 Days a week from 10:00 am to 6:00 pm
+                            </p>
+
+                            <p class="email">
+                                <i class="icon-csenvelope"></i>
+                                info@psdfreebies.com
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- bottom footer section -->
+            <div class="bottom-footer">
+                <div class="fluid-container clearfix">
+                    <!-- rights section -->
+                    <div class="bottom-footer-copyright">
+                        <p><strong>CarStore</strong> <span>2017.All Rights Reserved</span></p>
+                    </div>
+
+                    <!-- payment info -->
+                    <div class="bottom-footer-payment-info">
+                        <a href="#" class="payment-info-item">
+                            <i class="icon-cspaypal"></i>
+                        </a>
+
+                        <a href="#" class="payment-info-item">
+                            <i class="icon-csvisa"></i>
+                        </a>
+
+                        <a href="#" class="payment-info-item">
+                            <i class="icon-csmaster-card-logo"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </footer>
     </div>
 </body>

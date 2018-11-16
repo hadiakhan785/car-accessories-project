@@ -2,7 +2,22 @@
     // -Forms Start
 //===========================================
 
+// for newsletter form
+.newsletter-form-input {
+    height: rem(35);
+    width: 100%;
+    border: none;
+    background-color: #282828;
+    margin-bottom: rem(30);
+    color: $default-font-color;
+}
 
+.newsletter-form-input:focus{
+    outline: none;
+    background-color: lighten(#282828, 20%);
+    border-bottom: 1px solid white;
+    
+}
 //===========================================
     // -Forms end
 //===========================================

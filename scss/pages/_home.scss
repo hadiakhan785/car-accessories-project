@@ -4,184 +4,121 @@
 
 // Product Showcase
 
-%showcase-item-main-div {
+
+// showcase item
+.showcase-item{
 	height: rem(408);
 	width: 50%;
 	position: relative;
 	float: left;
-}
-
-%showcase-item-detail {
-	color: $default-font-color;
-	padding-top: rem(140);
-	width: rem(350); 
-	padding-left: rem(40);
-}
-
-%showcase-item-detail-title {
-	font-size: rem(35);
-	letter-spacing: rem(2);
-	margin: 0;
-}
-
-%showcase-item-description {
-	color: $supporting-fonts-1;
-	font-size: rem(20);
-}
-
-// showcase item 1
-.showcase-item-1{
-	@extend %showcase-item-main-div;
 	background-color: $supporting-2;
 	
 
 	.showcase-item-detail{
-		@extend %showcase-item-detail;
+		color: $default-font-color;
+		padding-top: rem(140);
+		width: rem(350); 
+		padding-left: rem(40);
 
 		.showcase-item-title {
-			@extend %showcase-item-detail-title;
+			font-size: rem(35);
+			letter-spacing: rem(2);
+			margin: 0;
 		}
 
 		.showcase-item-description {
-			@extend %showcase-item-description;
+			color: $supporting-fonts-1;
+			font-size: rem(20);
 		}
 	}
 
-	.showcase-item-1-pic{
-		position: absolute;
-		right: 0;
-		top: rem(100);
-		
-		img{
-			width: 100%;
-		}
+	img{
+		width: 100%;
 	}
+}
+
+.showcase-item:nth-child(2), .showcase-item:nth-child(3){
+	background-color: $supporting-3;
+}
+
+// showcase item 1
+.showcase-item-1-pic{
+	position: absolute;
+	right: 0;
+	top: rem(100);
 }
 
 // showcase item-2
-.showcase-item-2 {
-	@extend %showcase-item-main-div;	
-	background-color: $supporting-3 ;
-	
-	.showcase-item-detail {
-		@extend %showcase-item-detail;
-		
-		.showcase-item-title {
-			@extend %showcase-item-detail-title;			
-		}
-
-		.showcase-item-description {
-			@extend %showcase-item-description;			
-		}
-	}
-
-	.showcase-item-2-pic{
-		position: absolute;
-		bottom: 0;
-		right: rem(25);
-		
-		img{
-			width: 100%;
-		}
-	}
+.showcase-item-2-pic{
+	position: absolute;
+	bottom: 0;
+	right: rem(25);
 }
 
 // showcase item 3
-.showcase-item-3 {
-	@extend %showcase-item-main-div;	
-	background-color: $supporting-3 ;
-	
-	.showcase-item-detail {
-		@extend %showcase-item-detail;
-		
-		.showcase-item-title {
-			@extend %showcase-item-detail-title;			
-		}
-
-		.showcase-item-description {
-			@extend %showcase-item-description;			
-		}
-	}
-
-	.showcase-item-3a-pic{
-		position: absolute;
-		bottom: rem(40);
-		right: rem(50);
-		
-		img{
-			width: 100%;
-		}
-	}
-
-	.showcase-item-3b-pic{
-		position: absolute;
-		bottom: rem(60);
-		right: rem(200);
-		
-		img{
-			width: 100%;
-		}
-	}
+.showcase-item-3a-pic{
+	position: absolute;
+	bottom: rem(40);
+	right: rem(50);
 }
+
+.showcase-item-3b-pic{
+	position: absolute;
+	bottom: rem(60);
+	right: rem(200);
+}
+
 
 
 //showcase item 4
-.showcase-item-4 {
-	@extend %showcase-item-main-div;	
-	background-color: $supporting-2 ;
-	
-	.showcase-item-detail {
-		@extend %showcase-item-detail;
-		
-		.showcase-item-title {
-			@extend %showcase-item-detail-title;			
-		}
 
-		.showcase-item-description {
-			@extend %showcase-item-description;			
-		}
-	}
-
-	.showcase-item-4-pic{
-		position: absolute;
-		bottom: 0;
-		right: rem(60);
-		
-		img{
-			width: 100%;
-		}
-	}
+.showcase-item-4-pic{
+	position: absolute;
+	bottom: 0;
+	right: rem(60);
 }
+
 
 // featured products 
 .featured-products {
 	background-color: #282828;
 	padding-bottom: rem(120);
+	text-align: center;
 
-	.featured-products-title {
-		color: $default-font-color;
-		font-size: rem(35);
-		margin: 0;
-		padding-bottom: rem(15);
-		padding-top: rem(85);
-	}
+	.title-wrapper{
+		margin-bottom: rem(65);
 
-	.hr-div{
-		@include hr-div(rem(5), rem(176));
-		margin: 0 auto;
-		margin-bottom: rem(60);
+		.featured-products-title {
+			display: inline-block;
+			font-size: rem(35);
+			margin: 0;
+			padding-top: rem(85);
+			line-height: 0.9
+		}
 	}
 }
 
-// featured product item 1
+// featured product item
+
+.featured-products {
+	h2{
+		&:after {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+
 .featured-product-item {
-	width: rem(250);
+	width: 20%;
 	max-width: rem(250);
 	min-width: rem(200);
 	height: rem(400);
 	background-color: $featured-item-bg;
 	float: left;
 	margin: rem(10);
+	border: 1px solid transparent;
 
 	.featured-item-title{
 		color: $supporting-1;
@@ -203,6 +140,10 @@
 		margin: 0;
 		font-size: rem(17);
 	}
+}
+
+.featured-product-item:nth-child(2) {
+	margin-left: rem(20);
 }
 
 .featured-product-1-img {
@@ -239,6 +180,12 @@
 	width: rem(200);
 }
 
+.featured-product-item:hover{
+	border: 1px solid lighten($featured-item-bg, 10%);
+	cursor: pointer;
+}
+
+
 // deal offer section
 
 .deal-offer-section {
@@ -256,6 +203,8 @@
 .offer{
 	color: $default-font-color;
 	padding-top: rem(170);
+	text-align: center;
+	width: 40%;
 
 	.offer-title {
 		margin: 0;

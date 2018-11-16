@@ -14,6 +14,154 @@ header{
 	}
 }
 
+//Top bar
+.top-bar{
+	
+	.top-bar-nav{
+		float: right;
+	}
+}
+
+.top-navbar{
+	float: left;
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+		.top-navbar-item{
+			float: left;
+			a{
+				display: block;
+				color: $supporting-1;
+				padding: rem(14) rem(20);
+				font-size: rem(14);
+				font-weight: 400;
+				text-decoration: none;
+			}
+
+			a:hover{
+				color: $default-font-color;
+				transition: color 0.1s ease-in;
+			}
+
+			a:active {
+				color: $on-active;
+			}
+		}
+	}
+}
+
+.top-bar-search{
+	float: right;
+	padding-left: rem(14);
+	margin: rem(12);
+	margin-left: 0;
+	border-left: 1px solid $border-color;
+	i {
+		color: $default-font-color;
+		font-size: rem(20);
+
+	}
+}
+
+
+//Main bar
+.main-bar-brand{
+	float: left;
+	margin-top: rem(14);
+	.brand-link{
+		display: inline-block;
+	}
+}
+
+.main-bar-nav{
+	float: right;
+	.purchase-navbar{
+		list-style-type: none;
+		margin: 0;
+		float: right;
+		padding-left: 0;
+	}
+}
+
+.purchase-navbar-item{
+	float: right;
+	
+	
+	.purchase-navbar-item-link{
+		display: block;
+		color: $default-font-color;
+		line-height: 1.9;
+		text-decoration: none;
+		display: block;
+		margin: rem(14) 0;
+		padding: 0 rem(17);
+		border-left: 1px solid $border-color;
+		text-align: center;
+
+
+		i {
+			color: $supporting-1;
+			font-size: rem(25);
+		}
+	}
+}
+
+.purchase-navbar-item:nth-child(1) a{
+	padding-right: 0;
+}
+
+.purchase-navbar-item-link:hover{
+		&:after{
+			content: "";
+  			display: block;
+  			width: 100%;
+  			height: rem(1);
+  			position: relative;
+  			left: 0;
+  			z-index: 2;
+  			background-color: $supporting-1;
+		}
+}
+
+.purchase-navbar-item-link:active{
+	color: $on-active;
+	
+}
+
+
+
+.main-bar-purchase-opt{
+	float: right;
+	margin-left: rem(50);
+}
+
+.main-bar-phone-timing{
+	float: left;
+	color: $default-font-color;
+	margin: rem(12) 0;
+
+	.main-phone-timings{
+		line-height: 1.7;
+		font-size: rem(20);
+		margin: 0;
+
+		
+		i{
+			color: $supporting-1;
+			font-size: rem(20);
+			margin-right: rem(10);
+		}
+	
+		span {
+			font-size: rem(14);
+			color: #a2a2a2;
+		}
+	}
+
+	
+}
+
 
 //===========================================
 	// -Header end

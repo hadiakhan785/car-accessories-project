@@ -24,6 +24,14 @@
 	border-bottom: 1px solid $border-color;
 }
 
+.after-center{
+	.title{
+		&:after {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
 
 //===========================================
 	// -Helper Classes end
