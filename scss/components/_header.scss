@@ -4,6 +4,7 @@
 
 header{
 	background-color: #212121;
+	
 
 	.haeder-banner{
 		background-image: url('../images/header-pic.jpeg');
@@ -13,6 +14,15 @@ header{
 		background-size: cover;
 	}
 }
+
+.top-header {
+	background-color: #212121;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+}
+
 
 //Top bar
 .top-bar{
@@ -48,6 +58,8 @@ header{
 				color: $on-active;
 			}
 		}
+
+		
 	}
 }
 
@@ -72,6 +84,11 @@ header{
 	.brand-link{
 		display: inline-block;
 	}
+	@include mq('lg', max){
+		float: none;
+		text-align: center;
+	}
+	
 }
 
 .main-bar-nav{
@@ -160,6 +177,16 @@ header{
 	}
 
 	
+}
+
+@include mq('lg', max) {
+	.main-bar .main-bar-phone-timing{
+		display: none;
+	}
+
+	.main-bar .main-bar-nav{
+		display: none;
+	}
 }
 
 

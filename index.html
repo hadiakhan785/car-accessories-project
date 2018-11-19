@@ -18,50 +18,161 @@
     <div class="main-container">
 
         <header class="main-header">
-            <!-- top bar -->
-            <div class="top-bar">
-                <div class="container clearfix border-bottom">
-                    <div class="top-bar-nav clearfix">
-                        <nav class="top-navbar">
-                            <ul class="clearfix">
-                                <li class="top-navbar-item">
-                                    <a href="#"><i class="icon-csuser"></i> My Account</a>
-                                </li>
+            <div class="top-header">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <div class="container clearfix border-bottom">
+                        <div class="top-bar-nav clearfix">
+                            <nav class="top-navbar">
+                                <ul class="clearfix">
+                                    <li class="top-navbar-item">
+                                        <a href="#"><i class="icon-csuser"></i> My Account</a>
+                                    </li>
 
-                                <li class="top-navbar-item">
-                                    <a href="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
-                                </li>
+                                    <li class="top-navbar-item">
+                                        <a href="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
+                                    </li>
 
-                                <li class="top-navbar-item">
-                                    <a href="#"><i class="icon-cschecked"></i> Checkout</a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    <li class="top-navbar-item">
+                                        <a href="#"><i class="icon-cschecked"></i> Checkout</a>
+                                    </li>
+                                </ul>
+                            </nav>
 
-                        <!-- Search buttn -->
-                        <div class="top-bar-search btn">
-                            <i class="icon-csmusica-searcher"></i>
+                            <!-- Search buttn -->
+                            <div class="top-bar-search btn">
+                                <i class="icon-csmusica-searcher"></i>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <!-- main-bar -->
-            <div class="main-bar">
-                <div class="container clearfix">
-                    <!-- brand -->
-                    <div class="main-bar-brand">
-                        <a href="#" class="brand-link">
-                            <img src="images/logo.png" alt="logo">
-                        </a>
+                <!-- main-bar -->
+                <div class="main-bar">
+                    <div class="container clearfix">
+                        <!-- brand -->
+                        <div class="main-bar-brand">
+                            <a href="#" class="brand-link">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <!-- main-bar-navbar -->
+                        <div class="main-bar-nav clearfix">
+
+                            <!-- phone and timings -->
+                            <div class="main-bar-phone-timing text-right">
+                                <p class="main-phone-timings">
+                                    <i class="icon-cssmartphone"></i> +123 456 7890
+                                    <br>
+                                    <span>MON-FRI: 8:30AM-7:30PM; SAT-SUN: 9:30AM-4:30PM</span>
+                                </p>
+                            </div>
+
+                            <!-- purchasing options -->
+                            <div class="main-bar-purchase-opt clearfix">
+                                <ul class="purchase-navbar clearfix">
+
+                                    <li class="purchase-navbar-item">
+                                        <a href="#" class="purchase-navbar-item-link">
+                                            <i class="icon-csshopping-cart-black-shape"></i><br>
+                                            MY CART
+                                        </a>
+                                    </li>
+
+                                    <li class="purchase-navbar-item">
+                                        <a href="#" class="purchase-navbar-item-link">
+                                            <i class="icon-cssports-car"></i><br>
+                                            COMPARE
+                                        </a>
+                                    </li>
+
+                                    <li class="purchase-navbar-item">
+                                        <a href="#" class="purchase-navbar-item-link">
+                                            <i class="icon-csstar"></i><br>
+                                            WISHLIST
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
                     </div>
 
-                    <!-- main-bar-navbar -->
-                    <div class="main-bar-nav clearfix">
+                </div>
 
-                        <!-- phone and timings -->
-                        <div class="main-bar-phone-timing text-right">
+                <!-- sub bar navigation bar -->
+                <nav class="sub-bar-navigation">
+                    <div class="container">
+
+                        <!-- collapse button -->
+                        <div class="collapse">
+                            <button class="collapse-btn" onclick="collapseMenu()">Menu</button>
+                        </div>
+
+
+                        <ul class="sub-navbar clearfix">
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">HOME</a>
+                            </li>
+
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">SERVICES</a>
+                            </li>
+
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">ABOUT</a>
+                            </li>
+
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">REVIEWS</a>
+                            </li>
+
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">LOCATIONS</a>
+                            </li>
+
+                            <li class="sub-navbar-item">
+                                <a href="#" class="sub-navbar-item-link">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- collpase navbar -->
+                    <div class="collapse-nav">
+
+                        <!-- navigation in collapse-->
+                        <ul class="collapse-navbar">
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">HOME</a>
+                            </li>
+
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">SERVICES</a>
+                            </li>
+
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">ABOUT</a>
+                            </li>
+
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">REVIEWS</a>
+                            </li>
+
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">LOCATIONS</a>
+                            </li>
+
+                            <li class="collapse-navbar-item">
+                                <a href="#" class="collapse-navbar-item-link">CONTACTS</a>
+                            </li>
+                        </ul>
+
+                        <!-- timings in collapse -->
+                        <div class="main-bar-phone-timing collapse-bar-timings">
                             <p class="main-phone-timings">
                                 <i class="icon-cssmartphone"></i> +123 456 7890
                                 <br>
@@ -69,71 +180,39 @@
                             </p>
                         </div>
 
-                        <!-- purchasing options -->
-                        <div class="main-bar-purchase-opt clearfix">
-                            <ul class="purchase-navbar clearfix">
+                        <!-- purchasing opt in collapse -->
+                        <div class="collapse-bar-purchase-opt">
+                            <ul class="purchase-collapse-navbar">
 
-                                <li class="purchase-navbar-item">
-                                    <a href="#" class="purchase-navbar-item-link">
-                                        <i class="icon-csshopping-cart-black-shape"></i><br>
+                                <li class="purchase-colps-navbar-item">
+                                    <a href="#" class="purchase-colps-navbar-item-link">
+                                        <i class="icon-csshopping-cart-black-shape"></i>
                                         MY CART
                                     </a>
                                 </li>
 
-                                <li class="purchase-navbar-item">
-                                    <a href="#" class="purchase-navbar-item-link">
-                                        <i class="icon-cssports-car"></i><br>
+                                <li class="purchase-colps-navbar-item">
+                                    <a href="#" class="purchase-colps-navbar-item-link">
+                                        <i class="icon-cssports-car"></i>
                                         COMPARE
                                     </a>
                                 </li>
 
-                                <li class="purchase-navbar-item">
-                                    <a href="#" class="purchase-navbar-item-link">
-                                        <i class="icon-csstar"></i><br>
+                                <li class="purchase-colps-navbar-item">
+                                    <a href="#" class="purchase-colps-navbar-item-link">
+                                        <i class="icon-csstar"></i>
                                         WISHLIST
                                     </a>
                                 </li>
                             </ul>
                         </div>
-
-
-
                     </div>
-                </div>
+
+                </nav>
+
+
 
             </div>
-
-            <!-- sub bar navigation bar -->
-            <nav class="sub-bar-navigation">
-                <div class="container">
-                    <ul class="sub-navbar clearfix">
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">HOME</a>
-                        </li>
-
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">SERVICES</a>
-                        </li>
-
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">ABOUT</a>
-                        </li>
-
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">REVIEWS</a>
-                        </li>
-
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">LOCATIONS</a>
-                        </li>
-
-                        <li class="sub-navbar-item">
-                            <a href="#" class="sub-navbar-item-link">CONTACTS</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
 
             <!-- header banner image -->
             <div class="haeder-banner"></div>
@@ -176,12 +255,8 @@
                         <h4 class="showcase-item-description">Headlights Projector, LED, Factory</h4>
                     </div>
 
-                    <div class="showcase-item-3b-pic">
-                        <img src="images/product-3b.png" alt="product image">
-                    </div>
-
                     <div class="showcase-item-3a-pic">
-                        <img src="images/product-3a.png" alt="product image">
+                        <img src="images/product-3.png" alt="product image">
                     </div>
                 </div>
 
@@ -209,8 +284,8 @@
 
                     <!-- featured product 1 -->
                     <div class="featured-product-item">
-                        <div class="featured-product-1-img">
-                            <img src="images/accessory-1.png" alt="featured product 1">
+                        <div class="featured-product-img">
+                            <img src="images/accessory-1.png" class="featured-img" alt="featured product 1">
                         </div>
                         <div class="featued-product-detail">
                             <h4 class="featured-item-title">HEADLIGHTS</h4>
@@ -227,8 +302,8 @@
 
                     <!-- featured product 2 -->
                     <div class="featured-product-item">
-                        <div class="featured-product-2-img">
-                            <img src="images/accessory-2.png" alt="featured product 1">
+                        <div class="featured-product-img">
+                            <img src="images/accessory-2.png" class="featured-img" alt="featured product 1">
                         </div>
                         <div class="featued-product-detail">
                             <h4 class="featured-item-title">HEADLIGHTS</h4>
@@ -245,8 +320,8 @@
 
                     <!-- featured product 3 -->
                     <div class="featured-product-item">
-                        <div class="featured-product-3-img">
-                            <img src="images/accessory-3.png" alt="featured product 1">
+                        <div class="featured-product-img">
+                            <img src="images/accessory-3.png" class="featured-img" alt="featured product 1">
                         </div>
                         <div class="featued-product-detail">
                             <h4 class="featured-item-title">HEADLIGHTS</h4>
@@ -263,8 +338,8 @@
 
                     <!-- featured product 4 -->
                     <div class="featured-product-item">
-                        <div class="featured-product-4-img">
-                            <img src="images/accessory-4.png" alt="featured product 1">
+                        <div class="featured-product-img">
+                            <img src="images/accessory-4.png" class="featured-img" alt="featured product 1">
                         </div>
                         <div class="featued-product-detail">
                             <h4 class="featured-item-title">HEADLIGHTS</h4>
@@ -281,8 +356,8 @@
 
                     <!-- featured product 5 -->
                     <div class="featured-product-item">
-                        <div class="featured-product-5-img">
-                            <img src="images/accessory-5.png" alt="featured product 1">
+                        <div class="featured-product-img">
+                            <img src="images/accessory-5.png" class="featured-img" alt="featured product 1">
                         </div>
                         <div class="featued-product-detail">
                             <h4 class="featured-item-title">HEADLIGHTS</h4>
@@ -522,6 +597,11 @@
             </div>
         </footer>
     </div>
+
+
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

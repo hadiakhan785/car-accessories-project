@@ -2,13 +2,29 @@
 	// -Navbar start
 //===========================================
 
+.collapse{
+	display: none;
+	padding: rem(8);
+	
 
+	.collapse-btn {
+		background-color: transparent;
+		border: 1px solid $default-font-color;
+		color: $default-font-color;
+	}
+}
+
+.collapse-nav {
+	display: none;
+	z-index: 3;
+}
 
 
 // Sub bar navigation
 .sub-bar-navigation{
 	background-color: $sub-bar-bg;
 	padding: 0 rem(200);
+	position: relative;
 
 	.sub-navbar{
 		list-style-type: none;
@@ -34,6 +50,70 @@
 		}
 	}
 }
+
+.collapse-nav{
+	background-color: $sub-bar-bg;
+	width: 40%;
+	position: fixed;
+	height: 100%;
+	margin-left: -15px;
+
+	.collapse-navbar{
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid $border-color;
+		list-style-type: none;
+
+	}
+	.collapse-navbar-item-link{
+		color: $default-font-color;
+		text-decoration: none;
+		display: block;
+		padding: rem(15);
+	}
+
+	.collapse-bar-timings {
+		padding: rem(8);
+		float: none;
+		border-bottom: 1px solid $border-color;
+		text-align: left;
+	}
+
+	.purchase-collapse-navbar {
+		margin: 0;
+		padding: 0;
+	}
+
+	.purchase-colps-navbar-item-link{
+		text-decoration: none;
+		color: $default-font-color;
+		text-align: left;
+		display: block;
+		padding: rem(15);
+		
+		i {
+			color: $supporting-1;
+			margin-right: rem(8);
+		}
+	}
+}
+
+@include mq('lg', max){
+	.sub-bar-navigation{
+		padding: rem(20);
+
+	}
+	.sub-navbar {
+		display: none;
+	}
+
+	.collapse{
+		display: block;
+	} 
+
+}
+
+
 
 
 //===========================================
