@@ -18,6 +18,13 @@
     border-bottom: 1px solid white;
     
 }
+
+@include mq('sm', max){
+    .newsletter-form-input{
+        width: 50%;
+        
+    }
+}
 //===========================================
     // -Forms end
 //===========================================

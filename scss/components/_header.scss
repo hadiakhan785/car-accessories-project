@@ -81,7 +81,7 @@ header{
 .main-bar-brand{
 	float: left;
 	margin-top: rem(14);
-	.brand-link{
+	.brand-link {
 		display: inline-block;
 	}
 	@include mq('lg', max){
@@ -142,11 +142,8 @@ header{
 }
 
 .purchase-navbar-item-link:active{
-	color: $on-active;
-	
+	color: $on-active;	
 }
-
-
 
 .main-bar-purchase-opt{
 	float: right;
@@ -178,8 +175,15 @@ header{
 
 	
 }
+@include mq-only('xs', 'lg'){
+	.top-bar-nav-item a{
+		font-size: rem(20);
+	}
+}
 
 @include mq('lg', max) {
+	
+	
 	.main-bar .main-bar-phone-timing{
 		display: none;
 	}
@@ -187,7 +191,14 @@ header{
 	.main-bar .main-bar-nav{
 		display: none;
 	}
+
+	.brand-link img{
+		height: rem(80);
+		max-width: 100%;
+	}
 }
+
+
 
 
 //===========================================

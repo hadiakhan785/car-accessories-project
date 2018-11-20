@@ -14,12 +14,6 @@
 	}
 }
 
-.collapse-nav {
-	display: none;
-	z-index: 3;
-}
-
-
 // Sub bar navigation
 .sub-bar-navigation{
 	background-color: $sub-bar-bg;
@@ -51,12 +45,16 @@
 	}
 }
 
+
+// collapse navbar
 .collapse-nav{
 	background-color: $sub-bar-bg;
 	width: 40%;
+	visibility: hidden;
 	position: fixed;
 	height: 100%;
 	margin-left: -15px;
+	padding: rem(8);
 
 	.collapse-navbar{
 		margin: 0;
@@ -101,7 +99,6 @@
 @include mq('lg', max){
 	.sub-bar-navigation{
 		padding: rem(20);
-
 	}
 	.sub-navbar {
 		display: none;

@@ -31,7 +31,8 @@ footer{
 
 .quick-links-child {
 	float: left;
-	margin-right: rem(100);
+	padding-right: rem(120);
+	width: calc(100% / 4);
 	
 	h2{
 		@extend %title-properties;
@@ -44,8 +45,14 @@ footer{
 		text-decoration: none;
 		font-weight: bold;
 		padding: rem(10) 0;
+
+		@include mq('md', max){
+			font-size: rem(20);
+		}
 	}
 }
+
+
 
 .quick-links-child a:hover {
 	color: $on-active;
@@ -58,7 +65,8 @@ footer{
 // top footer form
 .top-footer-newsletter-form{
 	float: left;
-	width: rem(340);
+	width: calc(100% / 4);
+	padding: rem(10);
 
 	.newsletter-form-title {
 		@extend %title-properties;
@@ -66,6 +74,10 @@ footer{
 
 	.newsletter-form-descrip{
 		color: $for-footer-fonts;
+
+		@include mq('md', max){
+			font-size: rem(20);
+		}
 	}
 
 	.follow-links{
@@ -87,13 +99,14 @@ footer{
 //mid footer - information section
 .mid-footer-information{
 	margin-right: rem(80);
-	padding-left: rem(20);
 
 }
 
 .mid-footer-information, .mid-footer-contact-info{
 	float: left;
 	width: rem(395);
+	padding-left: rem(20);
+
 
 	h2{
 		@extend %title-properties;
@@ -151,7 +164,79 @@ footer{
 	}
 }
 
+@include mq-only('sm', 'md'){
+	.quick-links-parent{
+		float: none;
+		display: inline-block;
+		text-align: center;
 
+		.quick-links-child{
+			float: none;
+			display: inline-block;
+			width: 40%;
+			padding: rem(40) rem(10);
+		}
+
+		.top-footer-newsletter-form{
+			width: 40%;
+			font-size: rem(18);
+		}
+
+		.title {
+			&:after{
+				margin: 0 auto;
+				margin-top: rem(16);
+			}
+		}
+
+	}
+
+	.top-footer-newsletter-form{
+		float: none;
+		display: inline-block;
+	}
+
+	.mid-footer-contact-info{
+		padding-left: rem(20);
+	}
+}
+
+@include mq-only('xs', 'sm'){
+	.quick-links-parent{
+		text-align: center;
+	}
+
+	.quick-links-child, .top-footer-newsletter-form {
+		width: 100%;
+		padding: rem(40) rem(10);
+		display: block;
+		margin: 0 auto;
+
+		.title {
+			&:after{
+				margin: 0 auto;
+			}
+		}
+
+	}
+
+	.mid-footer-information, .mid-footer-contact-info {
+		width: 100%;
+		padding-top: rem(30);
+	}
+
+	.mid-footer-contact-info{
+		padding-left: rem(20);
+
+	}
+
+	.mid-footer{
+		.information-description, .contact-details {
+			font-size: rem(20);
+		}
+	}
+
+}
 //===========================================
 	// -Footer end
 //===========================================
