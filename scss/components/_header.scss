@@ -47,6 +47,8 @@ header{
 				font-size: rem(14);
 				font-weight: 400;
 				text-decoration: none;
+
+				
 			}
 
 			a:hover{
@@ -175,11 +177,6 @@ header{
 
 	
 }
-@include mq-only('xs', 'lg'){
-	.top-bar-nav-item a{
-		font-size: rem(20);
-	}
-}
 
 @include mq('lg', max) {
 	
@@ -198,7 +195,13 @@ header{
 	}
 }
 
-
+@include mq('sm', max){
+	.top-navbar-item{
+		a{
+			font-size: rem(20)!important;
+		}
+	}
+}
 
 
 //===========================================

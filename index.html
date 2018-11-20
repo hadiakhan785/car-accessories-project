@@ -7,6 +7,9 @@
     <title>Car Accessories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Animate.CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
@@ -17,7 +20,7 @@
 <body onload="init()">
     <div class="main-container">
 
-        <header class="main-header">
+        <header class="main-header" id="home">
             <div class="top-header">
                 <!-- top bar -->
                 <div class="top-bar">
@@ -116,58 +119,58 @@
 
                         <ul class="sub-navbar clearfix">
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">HOME</a>
+                                <a href="#home" class="sub-navbar-item-link">HOME</a>
                             </li>
 
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">SERVICES</a>
+                                <a href="#offer" class="sub-navbar-item-link">SERVICES</a>
                             </li>
 
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">ABOUT</a>
+                                <a href="#about" class="sub-navbar-item-link">ABOUT</a>
                             </li>
 
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">REVIEWS</a>
+                                <a href="#feature-products" class="sub-navbar-item-link">REVIEWS</a>
                             </li>
 
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">LOCATIONS</a>
+                                <a href="#location" class="sub-navbar-item-link">LOCATIONS</a>
                             </li>
 
                             <li class="sub-navbar-item">
-                                <a href="#" class="sub-navbar-item-link">CONTACTS</a>
+                                <a href="#contact" class="sub-navbar-item-link">CONTACTS</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- collpase navbar -->
-                    <div class="collapse-nav">
+                    <div class="collapse-nav animated faster">
 
                         <!-- navigation in collapse-->
                         <ul class="collapse-navbar">
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">HOME</a>
+                                <a href="#home" class="collapse-navbar-item-link">HOME</a>
                             </li>
 
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">SERVICES</a>
+                                <a href="#offer" class="collapse-navbar-item-link">SERVICES</a>
                             </li>
 
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">ABOUT</a>
+                                <a href="#about" class="collapse-navbar-item-link">ABOUT</a>
                             </li>
 
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">REVIEWS</a>
+                                <a href="#feature-products" class="collapse-navbar-item-link">REVIEWS</a>
                             </li>
 
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">LOCATIONS</a>
+                                <a href="#location" class="collapse-navbar-item-link">LOCATIONS</a>
                             </li>
 
                             <li class="collapse-navbar-item">
-                                <a href="#" class="collapse-navbar-item-link">CONTACTS</a>
+                                <a href="#contact" class="collapse-navbar-item-link">CONTACTS</a>
                             </li>
                         </ul>
 
@@ -222,7 +225,7 @@
         <article class="article-content">
 
             <!-- product showcase section -->
-            <div class="product-showcase clearfix">
+            <div class="product-showcase clearfix" id="about">
 
                 <!-- item-1 -->
                 <div class="showcase-item">
@@ -274,7 +277,7 @@
             </div>
 
             <!-- featured products -->
-            <div class="featured-products">
+            <div class="featured-products" id="feature-products">
                 <div class="fluid-container clearfix">
                     <div class="title-wrapper">
                         <h2 class="featured-products-title text-center title">FEATURED PRODUCTS</h2>
@@ -387,7 +390,7 @@
             </div>
 
             <!-- deals offer section -->
-            <div class="deal-offer-section">
+            <div class="deal-offer-section" id="offer">
                 <div class="deal-offer-bg-layer">
                     <div class="container clearfix">
 
@@ -472,7 +475,7 @@
                         </div>
 
                         <!-- news letter form -->
-                        <div class="top-footer-newsletter-form">
+                        <div class="top-footer-newsletter-form" id="contact">
                             <div class="title-wrapper">
                                 <h2 class="newsletter-form-title title">NEWSLETTER</h2>
 
@@ -550,7 +553,7 @@
                     </div>
 
                     <!-- contact details -->
-                    <div class="mid-footer-contact-info">
+                    <div class="mid-footer-contact-info" id="location">
                         <div class="title-wrapper">
                             <h2 class="title">CONTACT</h2>
                         </div>

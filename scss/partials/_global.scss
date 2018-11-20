@@ -11,7 +11,8 @@
 
 html, body {
   font-family: $font-default;
-	font-size: 8px;
+  font-size: 8px;
+  scroll-behavior: smooth;
 	
 	@include mq('sm', min) {
     font-size: 10px;

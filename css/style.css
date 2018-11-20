@@ -436,7 +436,8 @@ button:focus {
 
 html, body {
   font-family: "Lato", sans-serif;
-  font-size: 8px; }
+  font-size: 8px;
+  scroll-behavior: smooth; }
   @media (min-width: 576px) {
     html, body {
       font-size: 10px; } }
@@ -675,9 +676,6 @@ header {
       font-size: 0.875rem;
       color: #a2a2a2; }
 
-@media (min-width: 0) and (max-width: 991px) {
-  .top-bar-nav-item a {
-    font-size: 1.25rem; } }
 @media (max-width: 991px) {
   .main-bar .main-bar-phone-timing {
     display: none; }
@@ -688,6 +686,9 @@ header {
   .brand-link img {
     height: 5rem;
     max-width: 100%; } }
+@media (max-width: 575px) {
+  .top-navbar-item a {
+    font-size: 1.25rem !important; } }
 .quick-links-child h2, .top-footer-newsletter-form .newsletter-form-title, .mid-footer-information h2, .mid-footer-contact-info h2 {
   margin: 0;
   margin-bottom: 0.75rem;
@@ -815,7 +816,8 @@ footer {
     display: block;
     margin: 0 auto; }
     .quick-links-child .title:after, .top-footer-newsletter-form .title:after {
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 1rem; }
 
   .mid-footer-information, .mid-footer-contact-info {
     width: 100%;
