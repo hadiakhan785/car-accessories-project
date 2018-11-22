@@ -55,6 +55,7 @@
 	height: 100%;
 	margin-left: -15px;
 	padding: rem(8);
+	font-size: rem(18);
 
 	.collapse-navbar{
 		margin: 0;
@@ -95,6 +96,26 @@
 		}
 	}
 }
+
+#collapse-close-btn {
+	display: none;
+	font-size: rem(25);
+	padding: rem(7);
+}
+
+.hamburger-container {
+	display: inline-block;
+	cursor: pointer;
+
+	.bar-1, .bar-2, .bar-3{
+		height: rem(4);
+		width: rem(25);
+		background-color: $default-font-color;
+		margin: rem(6) 0;
+		transition: 0.4s;
+	}
+}
+
 
 @include mq('lg', max){
 	.sub-bar-navigation{

@@ -8,29 +8,35 @@ function init() {
 
     document.querySelector('footer').addEventListener('click', () => {
         if (document.querySelector('.collapse-nav').style.visibility == 'visible') {
-            document.querySelector('.collapse-nav').style.visibility = 'hidden';
+            closeMenu();
         }
     });
 
     document.querySelector('.collapse-nav').addEventListener('click', () => {
         if (document.querySelector('.collapse-nav').style.visibility == 'visible') {
-            document.querySelector('.collapse-nav').style.visibility = 'hidden';
+            closeMenu();
         }
     });
 }
 
-function collapseMenu() {
-    if (document.querySelector('.collapse-nav').style.visibility == 'hidden') {
-        document.querySelector('.collapse-nav').style.transition = '800ms';        
-        document.querySelector('.collapse-nav').style.visibility = 'visible';
-        document.querySelector('.collapse-nav').classList.remove('fadeOutLeft');
-        document.querySelector('.collapse-nav').classList.add('fadeInLeft');
-
-    } else {
-        document.querySelector('.collapse-nav').classList.remove('fadeInLeft');
-        document.querySelector('.collapse-nav').classList.add('fadeOutLeft');
-        document.querySelector('.collapse-nav').style.visibility = 'hidden';
-
-
-    }
+// for open collapse menu
+function openCollapseMenu() {
+    document.querySelector('.collapse-nav').style.transition = '800ms';
+    document.querySelector('.collapse-nav').style.visibility = 'visible';
+    document.querySelector('.collapse-nav').classList.remove('fadeOutLeft');
+    document.querySelector('.collapse-nav').classList.add('fadeInLeft');
+    document.querySelector('#collapse-open-btn').style.display = 'none';
+    document.querySelector('#collapse-close-btn').style.display = 'block';
 }
+
+
+// for close collapse menu
+function closeMenu() {
+    document.querySelector('.collapse-nav').classList.remove('fadeInLeft');
+    document.querySelector('.collapse-nav').classList.add('fadeOutLeft');
+    document.querySelector('.collapse-nav').style.visibility = 'hidden';
+    document.querySelector('#collapse-open-btn').style.display = 'block';
+    document.querySelector('#collapse-close-btn').style.display = 'none';
+
+}
+

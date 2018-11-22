@@ -113,7 +113,17 @@
 
                         <!-- collapse button -->
                         <div class="collapse">
-                            <button class="collapse-btn" onclick="collapseMenu()">Menu</button>
+                            <button class="collapse-btn" id="collapse-open-btn" onclick="openCollapseMenu()">
+                               <div class="hamburger-container">
+                                   <div class="bar-1"></div>
+                                   <div class="bar-2"></div>
+                                   <div class="bar-3"></div>
+                               </div>
+                            </button>
+
+                            <button class="collapse-btn" id="collapse-close-btn" onclick="closeMenu()">
+                                Close 
+                            </button>
                         </div>
 
 
