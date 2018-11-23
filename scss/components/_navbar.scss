@@ -5,6 +5,7 @@
 .collapse{
 	display: none;
 	padding: rem(8);
+	// margin: rem(6);
 	
 
 	.collapse-btn {
@@ -17,8 +18,13 @@
 // Sub bar navigation
 .sub-bar-navigation{
 	background-color: $sub-bar-bg;
-	padding: 0 rem(200);
-	position: relative;
+	position: sticky;
+
+
+	.sub-nav{
+		float: left;
+		width: 60%;
+	}
 
 	.sub-navbar{
 		list-style-type: none;
@@ -45,17 +51,40 @@
 	}
 }
 
+.top-sticky-search{
+	float: right;
+	padding-left: rem(14);
+	margin: 1.2rem;
+	margin-left: 0;
+	border-left: 1px solid $border-color;
+	display: none;
+
+	i {
+		color: $default-font-color;
+		font-size: rem(20);
+
+	}
+
+	@include mq('lg', max){
+		margin: 0.7rem;
+	}
+}
+
 
 // collapse navbar
 .collapse-nav{
 	background-color: $sub-bar-bg;
-	width: 40%;
+	width: 60%;
 	visibility: hidden;
 	position: fixed;
-	height: 100%;
-	margin-left: -15px;
-	padding: rem(8);
-	font-size: rem(18);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	// height: 100%;
+	z-index: 3;	
+	padding: rem(16);
+	font-size: rem(12);
+	overflow-y: scroll;
 
 	.collapse-navbar{
 		margin: 0;
@@ -76,6 +105,7 @@
 		float: none;
 		border-bottom: 1px solid $border-color;
 		text-align: left;
+		font-size: rem(12);
 	}
 
 	.purchase-collapse-navbar {
@@ -95,12 +125,38 @@
 			margin-right: rem(8);
 		}
 	}
+
+	.collapse-top-nav{
+		list-style-type: none;
+		padding-left: 0;
+		border-bottom: 1px solid $border-color;
+	}
+
+	.collapse-top-navbar-item {
+		a{
+			display:block;
+			text-decoration: none;
+			color: $default-font-color;
+			padding: rem(15);
+
+			i {
+				color: $supporting-1;
+				margin-right: rem(8);
+			}
+		}
+	}
 }
 
-#collapse-close-btn {
-	display: none;
-	font-size: rem(25);
-	padding: rem(7);
+.close-nav{
+	float: right;
+
+	#collapse-close-btn {
+		display: none;
+		font-size: rem(20);
+		background-color: black;
+		color: $default-font-color;
+		border: none;
+	}
 }
 
 .hamburger-container {
@@ -108,25 +164,25 @@
 	cursor: pointer;
 
 	.bar-1, .bar-2, .bar-3{
-		height: rem(4);
-		width: rem(25);
+		height: rem(2);
+		width: rem(15);
 		background-color: $default-font-color;
-		margin: rem(6) 0;
-		transition: 0.4s;
+		margin: rem(2) 0;
+		// transition: 0.4s;
 	}
 }
 
 
 @include mq('lg', max){
 	.sub-bar-navigation{
-		padding: rem(20);
+		padding: 0 rem(20);
 	}
 	.sub-navbar {
 		display: none;
 	}
 
 	.collapse{
-		display: block;
+		display: inline-block;
 	} 
 
 }

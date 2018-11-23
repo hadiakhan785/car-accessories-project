@@ -14,11 +14,17 @@
 
 .global-btn-2 {
   background-color: $supporting-4;
-  border: 1px solid $supporting-4;
+  border: 2px solid $supporting-4;
   padding: rem(8) rem(50);
   border-radius: rem(20);
   font-size: rem(20);
   color: $default-font-color;
+  transition: all 0.5s ease-in-out;
+
+  @include mq('md', max){
+    font-size: rem(14);
+    padding: rem(6) rem(16);
+  }
 }
 
 button:focus{
@@ -27,8 +33,7 @@ button:focus{
 
 .global-btn-2:hover {
   background-color: transparent;
-  border: 1px solid $default-font-color;
-  transition: background-color 0.5s ease-in-out;
+  border-color: $default-font-color;
 }
 
 .global-btn-2:active{

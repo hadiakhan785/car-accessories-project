@@ -7,11 +7,15 @@
     <title>Car Accessories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
     <!-- Animate.CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
     <!-- Customized -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -23,11 +27,14 @@
         <header class="main-header" id="home">
             <div class="top-header">
                 <!-- top bar -->
-                <div class="top-bar">
+                <div class="top-bar animated faster">
+
+
                     <div class="container clearfix border-bottom">
+                        <!-- top-bar -->
                         <div class="top-bar-nav clearfix">
                             <nav class="top-navbar">
-                                <ul class="clearfix">
+                                <ul class="top-bar-navbar clearfix">
                                     <li class="top-navbar-item">
                                         <a href="#"><i class="icon-csuser"></i> My Account</a>
                                     </li>
@@ -52,7 +59,7 @@
                 </div>
 
                 <!-- main-bar -->
-                <div class="main-bar">
+                <div class="main-bar animated faster">
                     <div class="container clearfix">
                         <!-- brand -->
                         <div class="main-bar-brand">
@@ -104,122 +111,148 @@
 
                         </div>
                     </div>
-
                 </div>
 
                 <!-- sub bar navigation bar -->
                 <nav class="sub-bar-navigation">
-                    <div class="container">
+                    <div class="container clearfix">
 
                         <!-- collapse button -->
                         <div class="collapse">
                             <button class="collapse-btn" id="collapse-open-btn" onclick="openCollapseMenu()">
-                               <div class="hamburger-container">
-                                   <div class="bar-1"></div>
-                                   <div class="bar-2"></div>
-                                   <div class="bar-3"></div>
-                               </div>
-                            </button>
-
-                            <button class="collapse-btn" id="collapse-close-btn" onclick="closeMenu()">
-                                Close 
+                                <i class="fas fa-bars"></i>
                             </button>
                         </div>
 
+                        <!-- collpase navbar -->
+                        <div class="collapse-nav animated faster">
 
-                        <ul class="sub-navbar clearfix">
-                            <li class="sub-navbar-item">
-                                <a href="#home" class="sub-navbar-item-link">HOME</a>
-                            </li>
+                            <!-- collapse close button -->
+                            <div class="close-nav">
+                                <button class="collapse-btn" id="collapse-close-btn" onclick="closeMenu()">
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                            </div>
 
-                            <li class="sub-navbar-item">
-                                <a href="#offer" class="sub-navbar-item-link">SERVICES</a>
-                            </li>
+                            <!-- navigation in collapse-->
+                            <ul class="collapse-navbar">
+                                <li class="collapse-navbar-item">
+                                    <a href="#home" class="collapse-navbar-item-link">HOME</a>
+                                </li>
 
-                            <li class="sub-navbar-item">
-                                <a href="#about" class="sub-navbar-item-link">ABOUT</a>
-                            </li>
+                                <li class="collapse-navbar-item">
+                                    <a href="#offer" class="collapse-navbar-item-link">SERVICES</a>
+                                </li>
 
-                            <li class="sub-navbar-item">
-                                <a href="#feature-products" class="sub-navbar-item-link">REVIEWS</a>
-                            </li>
+                                <li class="collapse-navbar-item">
+                                    <a href="#about" class="collapse-navbar-item-link">ABOUT</a>
+                                </li>
 
-                            <li class="sub-navbar-item">
-                                <a href="#location" class="sub-navbar-item-link">LOCATIONS</a>
-                            </li>
+                                <li class="collapse-navbar-item">
+                                    <a href="#feature-products" class="collapse-navbar-item-link">REVIEWS</a>
+                                </li>
 
-                            <li class="sub-navbar-item">
-                                <a href="#contact" class="sub-navbar-item-link">CONTACTS</a>
-                            </li>
-                        </ul>
-                    </div>
+                                <li class="collapse-navbar-item">
+                                    <a href="#location" class="collapse-navbar-item-link">LOCATIONS</a>
+                                </li>
 
-                    <!-- collpase navbar -->
-                    <div class="collapse-nav animated faster">
+                                <li class="collapse-navbar-item">
+                                    <a href="#contact" class="collapse-navbar-item-link">CONTACTS</a>
+                                </li>
+                            </ul>
 
-                        <!-- navigation in collapse-->
-                        <ul class="collapse-navbar">
-                            <li class="collapse-navbar-item">
-                                <a href="#home" class="collapse-navbar-item-link">HOME</a>
-                            </li>
+                            <!-- timings in collapse -->
+                            <div class="main-bar-phone-timing collapse-bar-timings">
+                                <p class="main-phone-timings">
+                                    <i class="icon-cssmartphone"></i> +123 456 7890
+                                    <br>
+                                    <span>MON-FRI: 8:30AM-7:30PM; SAT-SUN: 9:30AM-4:30PM</span>
+                                </p>
+                            </div>
 
-                            <li class="collapse-navbar-item">
-                                <a href="#offer" class="collapse-navbar-item-link">SERVICES</a>
-                            </li>
+                            <!-- collapse top navbar -->
+                            <nav class="collapse-top-navbar">
+                                <ul class="collapse-top-nav clearfix">
+                                    <li class="collapse-top-navbar-item">
+                                        <a href="#"><i class="icon-csuser"></i> My Account</a>
+                                    </li>
 
-                            <li class="collapse-navbar-item">
-                                <a href="#about" class="collapse-navbar-item-link">ABOUT</a>
-                            </li>
+                                    <li class="collapse-top-navbar-item">
+                                        <a href="#"><i class="icon-csshopping-cart-black-shape"></i> Cart</a>
+                                    </li>
 
-                            <li class="collapse-navbar-item">
-                                <a href="#feature-products" class="collapse-navbar-item-link">REVIEWS</a>
-                            </li>
+                                    <li class="collapse-top-navbar-item">
+                                        <a href="#"><i class="icon-cschecked"></i> Checkout</a>
+                                    </li>
+                                </ul>
+                            </nav>
 
-                            <li class="collapse-navbar-item">
-                                <a href="#location" class="collapse-navbar-item-link">LOCATIONS</a>
-                            </li>
+                            <!-- purchasing opt in collapse -->
+                            <div class="collapse-bar-purchase-opt">
+                                <ul class="purchase-collapse-navbar">
 
-                            <li class="collapse-navbar-item">
-                                <a href="#contact" class="collapse-navbar-item-link">CONTACTS</a>
-                            </li>
-                        </ul>
+                                    <li class="purchase-colps-navbar-item">
+                                        <a href="#" class="purchase-colps-navbar-item-link">
+                                            <i class="icon-csshopping-cart-black-shape"></i>
+                                            MY CART
+                                        </a>
+                                    </li>
 
-                        <!-- timings in collapse -->
-                        <div class="main-bar-phone-timing collapse-bar-timings">
-                            <p class="main-phone-timings">
-                                <i class="icon-cssmartphone"></i> +123 456 7890
-                                <br>
-                                <span>MON-FRI: 8:30AM-7:30PM; SAT-SUN: 9:30AM-4:30PM</span>
-                            </p>
+                                    <li class="purchase-colps-navbar-item">
+                                        <a href="#" class="purchase-colps-navbar-item-link">
+                                            <i class="icon-cssports-car"></i>
+                                            COMPARE
+                                        </a>
+                                    </li>
+
+                                    <li class="purchase-colps-navbar-item">
+                                        <a href="#" class="purchase-colps-navbar-item-link">
+                                            <i class="icon-csstar"></i>
+                                            WISHLIST
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
                         </div>
 
-                        <!-- purchasing opt in collapse -->
-                        <div class="collapse-bar-purchase-opt">
-                            <ul class="purchase-collapse-navbar">
 
-                                <li class="purchase-colps-navbar-item">
-                                    <a href="#" class="purchase-colps-navbar-item-link">
-                                        <i class="icon-csshopping-cart-black-shape"></i>
-                                        MY CART
-                                    </a>
+                        <div class="sub-nav animated faster">
+                            <ul class="sub-navbar clearfix">
+                                <li class="sub-navbar-item">
+                                    <a href="#home" class="sub-navbar-item-link">HOME</a>
                                 </li>
 
-                                <li class="purchase-colps-navbar-item">
-                                    <a href="#" class="purchase-colps-navbar-item-link">
-                                        <i class="icon-cssports-car"></i>
-                                        COMPARE
-                                    </a>
+                                <li class="sub-navbar-item">
+                                    <a href="#offer" class="sub-navbar-item-link">SERVICES</a>
                                 </li>
 
-                                <li class="purchase-colps-navbar-item">
-                                    <a href="#" class="purchase-colps-navbar-item-link">
-                                        <i class="icon-csstar"></i>
-                                        WISHLIST
-                                    </a>
+                                <li class="sub-navbar-item">
+                                    <a href="#about" class="sub-navbar-item-link">ABOUT</a>
+                                </li>
+
+                                <li class="sub-navbar-item">
+                                    <a href="#feature-products" class="sub-navbar-item-link">REVIEWS</a>
+                                </li>
+
+                                <li class="sub-navbar-item">
+                                    <a href="#location" class="sub-navbar-item-link">LOCATIONS</a>
+                                </li>
+
+                                <li class="sub-navbar-item">
+                                    <a href="#contact" class="sub-navbar-item-link">CONTACTS</a>
                                 </li>
                             </ul>
                         </div>
+
+
+                        <div class="top-sticky-search btn animated faster">
+                            <i class="icon-csmusica-searcher"></i>
+                        </div>
                     </div>
+
+
 
                 </nav>
 
@@ -228,7 +261,20 @@
             </div>
 
             <!-- header banner image -->
-            <div class="haeder-banner"></div>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide haeder-banner" id="slide-1"></div>
+                    <div class="swiper-slide haeder-banner" id="slide-2"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button"></div>
+                <div class="swiper-button-next swiper-button"></div>
+
+
+            </div>
         </header>
 
         <!-- further body content -->
@@ -496,7 +542,7 @@
 
                             <input type="text" class="newsletter-form-input" /><br>
 
-                            <button class="btn global-btn-2">SUBMIT NOW</button>
+                            <button class="btn global-btn-2">SUBMIT</button>
 
                             <!-- follow links -->
                             <div class="follow-links">
@@ -626,6 +672,11 @@
 
 
     <script src="js/script.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
 
 </body>
 

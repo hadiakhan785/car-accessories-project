@@ -14,15 +14,12 @@
 
 .newsletter-form-input:focus{
     outline: none;
-    background-color: lighten(#282828, 20%);
-    border-bottom: 1px solid white;
-    
+    padding: rem(8);
 }
 
 @include mq('sm', max){
     .newsletter-form-input{
         width: 50%;
-        
     }
 }
 //===========================================

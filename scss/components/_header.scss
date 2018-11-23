@@ -7,11 +7,35 @@ header{
 	
 
 	.haeder-banner{
-		background-image: url('../images/header-pic.jpeg');
 		height: rem(674);
 		width: 100%;
-		background-position: bottom;
+		background-position: center;
 		background-size: cover;
+
+		@include mq('sm', max){
+			height: rem(300);
+		}
+	}
+
+	#slide-1{
+		background-image: url('../images/header-pic.jpeg');
+	}
+
+	#slide-2{
+		background-image: url('../images/offer-bg.jpeg');
+	}
+
+	.swiper-button{
+		color: $supporting-1;
+
+		@include mq('lg', max){
+			margin-top: rem(20);
+		}
+
+		@include mq('sm', max){
+			height: rem(20);
+			margin-top: 25px;
+		}
 	}
 }
 
@@ -45,7 +69,7 @@ header{
 				color: $supporting-1;
 				padding: rem(14) rem(20);
 				font-size: rem(14);
-				font-weight: 400;
+				font-weight: 300;
 				text-decoration: none;
 
 				
@@ -53,7 +77,7 @@ header{
 
 			a:hover{
 				color: $default-font-color;
-				transition: color 0.1s ease-in;
+				transition: all 0.1s ease-in;
 			}
 
 			a:active {
@@ -74,7 +98,15 @@ header{
 	i {
 		color: $default-font-color;
 		font-size: rem(20);
+	}
 
+	
+	@include mq('md', max){
+		margin: rem(6);
+
+		i{
+			font-size: rem(16);
+		}
 	}
 }
 
@@ -85,6 +117,10 @@ header{
 	margin-top: rem(14);
 	.brand-link {
 		display: inline-block;
+
+		@include mq('lg', max){
+			max-width: 30%;
+		}
 	}
 	@include mq('lg', max){
 		float: none;
@@ -190,15 +226,18 @@ header{
 	}
 
 	.brand-link img{
-		height: rem(80);
 		max-width: 100%;
+	}
+
+	.top-navbar {
+		display: none;
 	}
 }
 
 @include mq('sm', max){
 	.top-navbar-item{
 		a{
-			font-size: rem(20)!important;
+			font-size: rem(10);
 		}
 	}
 }

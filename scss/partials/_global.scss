@@ -11,7 +11,7 @@
 
 html, body {
   font-family: $font-default;
-  font-size: 8px;
+  font-size: 14px;
   scroll-behavior: smooth;
 	
 	@include mq('sm', min) {
@@ -20,24 +20,32 @@ html, body {
 	@include mq('md', min) {
     font-size: 12px;
   }
-	@include mq('lg', min) {
+	@include mq('lg', min) { 
     font-size: 14px;
   }
   @include mq('xl', min) {
     font-size: 16px;
-  }
-}
+  } 
+}  
 
 .container {
   width: 100%;
   max-width: rem(1200);
   margin: 0 auto;
+
+  @include mq('xl', max){
+    padding: 0 rem(16);
+  }
 }
 
 .fluid-container{
   width: 100%;
   max-width: rem(1400);
   margin: 0 auto;
+
+  @include mq('xl', max){
+    padding: 0 rem(14);
+  }
 }
 
 
@@ -58,6 +66,10 @@ html, body {
     padding-right: rem(16);     
     margin-right: 100%;
   }
+}
+
+.fixed-position{
+  position: fixed;
 }
 
 

@@ -13,6 +13,9 @@
 	float: left;
 	background-color: $supporting-2;
 	
+	// @include mq('md', max){
+	// 	height: rem(300);
+	// }
 
 	.showcase-item-detail{
 		color: $default-font-color;
@@ -47,6 +50,11 @@
 	right: 0;
 	top: rem(100);
 	max-width: 35%;
+
+	@include mq('sm', max){
+		top: rem(250);
+		max-width: 45%;
+	}
 }
 
 // showcase item-2
@@ -71,8 +79,10 @@
 	position: absolute;
 	bottom: 0;
 	right: rem(60);
-	max-width: 35%;
-
+	max-width: 30%;
+	@include mq('md', max){
+		max-width: 25%;
+	}
 }
 
 
@@ -117,6 +127,18 @@
 	float: left;
 	margin: rem(10);
 	border: 1px solid transparent;
+
+	@include mq('lg', max){
+		height: rem(600);
+	}
+
+	@include mq('sm', max){
+		height: rem(450);
+
+
+	}
+
+
 
 	.featured-item-title{
 		color: $supporting-1;
@@ -192,15 +214,28 @@
 	.offer-title {
 		margin: 0;
 		font-size: rem(82);
+
+		@include mq('md', max){
+			font-size: rem(50);
+		}
+		
 	}
 
 	.offer-description {
 		font-size: rem(40);
 		margin: rem(10) 0;
+
+		@include mq('md', max){
+			font-size: rem(16);
+		}
 	}
 
 	.offer-validity{
 		font-size: rem(15);
+
+		@include mq('md', max){
+			font-size: rem(10);
+		}
 	}
 
 
@@ -229,12 +264,13 @@
 @include mq-only('sm', 'lg'){
 	.featured-product-item{
 		min-width: 40%;
-		height: rem(600);
 
 		.featured-product-img{
 			height: 75%;
 		}
 	}
+
+	
 }
 
 @include mq('md', max){
@@ -253,7 +289,6 @@
 @include mq('sm', max){
 	.featured-product-item{
 		min-width: 70%;
-		height: rem(600);
 	}
 }
 
