@@ -11,9 +11,10 @@ header{
 		width: 100%;
 		background-position: center;
 		background-size: cover;
+		background-repeat: no-repeat;
 
 		@include mq('sm', max){
-			height: rem(300);
+			height: rem(400);
 		}
 	}
 
@@ -27,15 +28,19 @@ header{
 
 	.swiper-button{
 		color: $supporting-1;
-
-		@include mq('lg', max){
-			margin-top: rem(20);
-		}
+		margin-top: rem(20);
+		background-image: none;
+		font-size: rem(50);
 
 		@include mq('sm', max){
 			height: rem(20);
-			margin-top: 25px;
+		
 		}
+	}
+
+	.swiper-button:focus{
+		outline: none;
+		border:	none;
 	}
 }
 
@@ -53,6 +58,10 @@ header{
 	
 	.top-bar-nav{
 		float: right;
+
+		@include mq('sm', max){
+			width: 100%;
+		}
 	}
 }
 
@@ -70,9 +79,7 @@ header{
 				padding: rem(14) rem(20);
 				font-size: rem(14);
 				font-weight: 300;
-				text-decoration: none;
-
-				
+				text-decoration: none;				
 			}
 
 			a:hover{
@@ -89,12 +96,36 @@ header{
 	}
 }
 
-.top-bar-search{
+.search-section{
 	float: right;
+
+	.input-pop-up{
+		display: none;
+		position: relative;
+		top: 0;
+		z-index: 4;
+		width: rem(500);
+		margin-top: rem(8);
+		float: right;
+
+		@include mq('sm', max){
+			width: 80%;
+		}
+	}
+
+	@include mq('sm', max){
+		width: 100%;
+	}
+}
+
+.top-bar-search{
 	padding-left: rem(14);
 	margin: rem(12);
 	margin-left: 0;
 	border-left: 1px solid $border-color;
+	// display: inline-block;
+	float: right;
+
 	i {
 		color: $default-font-color;
 		font-size: rem(20);
@@ -105,7 +136,7 @@ header{
 		margin: rem(6);
 
 		i{
-			font-size: rem(16);
+			font-size: rem(20);
 		}
 	}
 }

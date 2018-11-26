@@ -50,9 +50,25 @@
                             </nav>
 
                             <!-- Search buttn -->
-                            <div class="top-bar-search btn">
-                                <i class="icon-csmusica-searcher"></i>
+                            <div class="search-section">
+
+                                <div class="top-bar-search btn" onclick="showSearchBox()">
+                                    <i class="icon-csmusica-searcher"></i>
+                                </div>
+
+                                <div class="input-pop-up animated faster clearfix">
+                                    
+                                    <button class="close-pop-up-btn" onclick="closeSearchBox()">
+                                        <i class="far fa-times-circle"></i>
+                                    </button>
+                                    <input type="text" id="search-input"  placeholder="Search" />
+                                </div>
+
+
                             </div>
+
+
+
 
                         </div>
                     </div>
@@ -247,9 +263,7 @@
                         </div>
 
 
-                        <div class="top-sticky-search btn animated faster">
-                            <i class="icon-csmusica-searcher"></i>
-                        </div>
+                        
                     </div>
 
 
@@ -270,8 +284,13 @@
                 </div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev swiper-button"></div>
-                <div class="swiper-button-next swiper-button"></div>
+                <div class="swiper-button-prev swiper-button">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+
+                <div class="swiper-button-next swiper-button">
+                    <i class="fas fa-angle-right"></i>
+                </div>
 
 
             </div>
@@ -651,9 +670,6 @@
 
                     <!-- payment info -->
                     <div class="bottom-footer-payment-info">
-                        <a href="#" class="payment-info-item">
-                            <i class="icon-cspaypal"></i>
-                        </a>
 
                         <a href="#" class="payment-info-item">
                             <i class="icon-csvisa"></i>

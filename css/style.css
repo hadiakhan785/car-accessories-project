@@ -404,6 +404,9 @@ th {
   font-size: 1.25rem;
   color: #fff;
   transition: all 0.5s ease-in-out; }
+  .global-btn-2:hover {
+    background-color: transparent;
+    border-color: #fff; }
   @media (max-width: 767px) {
     .global-btn-2 {
       font-size: 0.875rem;
@@ -412,12 +415,36 @@ th {
 button:focus {
   outline: none; }
 
-.global-btn-2:hover {
-  background-color: transparent;
-  border-color: #fff; }
-
 .global-btn-2:active {
   color: #a2a2a2; }
+
+.close-pop-up-btn {
+  float: right;
+  background-color: #282828;
+  border: 1px solid #595959;
+  color: #fff;
+  font-size: 1.3125rem;
+  border-left: none; }
+  @media (max-width: 575px) {
+    .close-pop-up-btn {
+      font-size: 1rem; } }
+
+#search-input {
+  height: 1.875rem;
+  background-color: #282828;
+  border: 1px solid #595959;
+  color: #fff;
+  padding: 0 0.5rem;
+  float: right;
+  width: 91%;
+  border-right: none; }
+  @media (max-width: 575px) {
+    #search-input {
+      width: 70%;
+      height: 1.5rem; } }
+
+#search-input:focus {
+  outline: none; }
 
 .newsletter-form-input {
   height: 2.1875rem;
@@ -574,23 +601,26 @@ header {
     height: 42.125rem;
     width: 100%;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media (max-width: 575px) {
       header .haeder-banner {
-        height: 18.75rem; } }
+        height: 25rem; } }
   header #slide-1 {
     background-image: url("../images/header-pic.jpeg"); }
   header #slide-2 {
     background-image: url("../images/offer-bg.jpeg"); }
   header .swiper-button {
-    color: #ff3448; }
-    @media (max-width: 991px) {
-      header .swiper-button {
-        margin-top: 1.25rem; } }
+    color: #ff3448;
+    margin-top: 1.25rem;
+    background-image: none;
+    font-size: 3.125rem; }
     @media (max-width: 575px) {
       header .swiper-button {
-        height: 1.25rem;
-        margin-top: 25px; } }
+        height: 1.25rem; } }
+  header .swiper-button:focus {
+    outline: none;
+    border: none; }
 
 .top-header {
   background-color: #212121;
@@ -601,6 +631,9 @@ header {
 
 .top-bar .top-bar-nav {
   float: right; }
+  @media (max-width: 575px) {
+    .top-bar .top-bar-nav {
+      width: 100%; } }
 
 .top-navbar {
   float: left; }
@@ -623,12 +656,29 @@ header {
       .top-navbar ul .top-navbar-item a:active {
         color: #a2a2a2; }
 
+.search-section {
+  float: right; }
+  .search-section .input-pop-up {
+    display: none;
+    position: relative;
+    top: 0;
+    z-index: 4;
+    width: 31.25rem;
+    margin-top: 0.5rem;
+    float: right; }
+    @media (max-width: 575px) {
+      .search-section .input-pop-up {
+        width: 80%; } }
+  @media (max-width: 575px) {
+    .search-section {
+      width: 100%; } }
+
 .top-bar-search {
-  float: right;
   padding-left: 0.875rem;
   margin: 0.75rem;
   margin-left: 0;
-  border-left: 1px solid #595959; }
+  border-left: 1px solid #595959;
+  float: right; }
   .top-bar-search i {
     color: #fff;
     font-size: 1.25rem; }
@@ -636,7 +686,7 @@ header {
     .top-bar-search {
       margin: 0.375rem; }
       .top-bar-search i {
-        font-size: 1rem; } }
+        font-size: 1.25rem; } }
 
 .main-bar-brand {
   float: left;
@@ -844,9 +894,12 @@ footer {
     float: right; }
     .bottom-footer .bottom-footer-payment-info .payment-info-item {
       color: #fff;
-      font-size: 1.5625rem;
+      font-size: 2.5rem;
       text-decoration: none;
       margin-left: 1.25rem; }
+      @media (max-width: 575px) {
+        .bottom-footer .bottom-footer-payment-info .payment-info-item {
+          font-size: 1.875rem; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .quick-links-parent {
@@ -925,20 +978,6 @@ footer {
       transition: all 0.3s ease-in-out; }
     .sub-bar-navigation .sub-navbar .sub-navbar-item-link:active {
       background-color: white; }
-
-.top-sticky-search {
-  float: right;
-  padding-left: 0.875rem;
-  margin: 1.2rem;
-  margin-left: 0;
-  border-left: 1px solid #595959;
-  display: none; }
-  .top-sticky-search i {
-    color: #fff;
-    font-size: 1.25rem; }
-  @media (max-width: 991px) {
-    .top-sticky-search {
-      margin: 0.7rem; } }
 
 .collapse-nav {
   background-color: #030303;

@@ -21,6 +21,11 @@
   color: $default-font-color;
   transition: all 0.5s ease-in-out;
 
+  &:hover{
+    background-color: transparent;
+    border-color: $default-font-color;
+  }
+
   @include mq('md', max){
     font-size: rem(14);
     padding: rem(6) rem(16);
@@ -31,13 +36,23 @@ button:focus{
   outline: none;
 }
 
-.global-btn-2:hover {
-  background-color: transparent;
-  border-color: $default-font-color;
-}
 
 .global-btn-2:active{
   color: $on-active;
+}
+
+.close-pop-up-btn{
+  float: right;
+  background-color: #282828;
+  border: 1px solid $border-color;
+  color: $default-font-color;
+  font-size: rem(21);
+  border-left: none;
+
+  @include mq('sm', max){
+    font-size: rem(16);
+  }
+  
 }
 
 

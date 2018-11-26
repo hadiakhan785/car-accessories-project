@@ -2,6 +2,28 @@
     // -Forms Start
 //===========================================
 
+// search input
+#search-input{
+    height: rem(30);
+    background-color: #282828;
+    border: 1px solid $border-color;
+    color: $default-font-color;
+    padding: 0 rem(8);
+    float: right;
+    width: 91%;
+    border-right: none;
+
+    @include mq('sm', max){
+        width: 70%;
+        height: rem(24);
+    }
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+
 // for newsletter form
 .newsletter-form-input {
     height: rem(35);

@@ -201,9 +201,13 @@ footer{
 		float: right;
 		.payment-info-item{
 			color: $default-font-color;
-			font-size: rem(25);
+			font-size: rem(40);
 			text-decoration: none;
 			margin-left: rem(20);
+
+			@include mq('sm', max){
+				font-size: rem(30);
+			}
 		}
 
 	}

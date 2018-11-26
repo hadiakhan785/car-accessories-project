@@ -51,24 +51,6 @@
 	}
 }
 
-.top-sticky-search{
-	float: right;
-	padding-left: rem(14);
-	margin: 1.2rem;
-	margin-left: 0;
-	border-left: 1px solid $border-color;
-	display: none;
-
-	i {
-		color: $default-font-color;
-		font-size: rem(20);
-
-	}
-
-	@include mq('lg', max){
-		margin: 0.7rem;
-	}
-}
 
 
 // collapse navbar
